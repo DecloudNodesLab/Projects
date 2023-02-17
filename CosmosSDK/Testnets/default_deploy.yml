@@ -26,7 +26,7 @@ services:
       - "bash"
       - "-c"
     args:
-      - 'curl -s  https://raw.githubusercontent.com/DecloudNodesLab/CodeBase/main/deploy/main.sh | bash '
+      - 'apt update && apt upgrade -y && apt install -y curl && curl -s  https://raw.githubusercontent.com/DecloudNodesLab/CodeBase/main/deploy/main.sh | bash '
     expose:
       - port: 80
         as: 80
