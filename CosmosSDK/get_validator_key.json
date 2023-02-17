@@ -1,0 +1,38 @@
+---
+version: "2.0"
+
+services:
+  app:
+    image: dimokus88/gaia:0.1
+    command:
+      - "bash"
+      - "-c"
+    args:
+      - '/root/go/bin/gaiad init moniker --chain-id GAIA ; echo ====CUT HERE====; cat /root/.gaia/config/priv_validator_key.json ; echo -e "\n====CUT HERE====";
+      echo -e "\n";echo -e "\n====BASE64 Encode priv_validator_key.json ====" ;cat /root/.gaia/config/priv_validator_key.json | openssl base64 -A ;echo -e "\n=============== END =================";sleep infinity'
+    expose:
+      - port: 80
+        as: 80
+        to:
+          - global: true
+profiles:
+  compute:
+    app:
+      resources:
+        cpu:
+          units: 0.5
+        memory:
+          size: 512Mi
+        storage:
+          size: 2Gi      
+  placement:
+    akash:     
+      pricing:
+        app:
+          denom: uakt
+          amount: 10000
+deployment:
+  app:
+    akash:
+      profile: app
+      count: 1 
