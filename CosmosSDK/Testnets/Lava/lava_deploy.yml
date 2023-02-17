@@ -1,0 +1,69 @@
+##############################
+# Validator node on Akash Network
+#
+# Guide for deploy node https://github.com/Dimokus88/Akash-Nodes-Lab/blob/main/Guide/README.md
+# Site project: https://lavanet.xyz/
+# Discord or Telegram project: https://discord.com/invite/5VcqgwMmkA
+# Twitter: https://twitter.com/lavanetxyz
+# Explorer: https://bd.lavanet.xyz/
+##############################
+# Akash Discord: https://discord.gg/ybKMsYYZkx
+# Akash Telegram EN: https://t.me/AkashNW
+# Akash Telegram RU: https://t.me/akash_ru
+##############################
+---
+version: "2.0"
+services:
+  app:
+    image: dimokus88/ubuntu:1.3
+    env:
+      - "MY_ROOT_PASSWORD=" #Root password far a ssh connection.
+      - "MONIKER=Akash" # Node name. 
+      - "VALIDATOR_KEY_JSON_BASE64=" # Paste your base64 encoded priv_validator_key.json
+      - "BINARY_LINK=https://lava-binary-upgrades.s3.amazonaws.com/testnet/v0.4.4/lavad"
+      - "SNAP_RPC=https://rpc-lava.nodeist.net:443"
+      - "PEER=0561fed6e88f2167979e379436529861527d859d@65.109.92.148:61256,5b25ec3860445e50a41a80850970b3241350df72@194.233.90.134:26656,6b1d0465b3e2a32b5328e59eb75c38d88233b56f@80.82.215.19:60656,e4c705abed2f76830652799d2eb386a9b876daff@168.119.52.60:26656,daa11ae80a2fecde611054b6ca83453462878d9e@65.108.65.246:30656,f120685de6785d8ee0eadfca42407c6e10593e74@144.76.90.130:32656,dabe2e77bd6b9278f484b34956750e9470527ef7@178.18.246.118:26656"
+    command:
+      - "bash"
+      - "-c"
+    args:
+      - 'curl -s  https://raw.githubusercontent.com/Dimokus88/Akash-Nodes-Lab/main/Active_testnets/Lava/main.sh | bash '
+    expose:
+      - port: 80
+        as: 80
+        to:
+          - global: true
+      - port: 22
+        as: 22
+        to:
+          - global: true
+      - port: 26656
+        as: 26656
+        to:
+          - global: true
+      - port: 26657
+        as: 26657
+        to:
+          - global: true
+profiles:
+  compute:
+    app:
+      resources:
+        cpu:
+          units: 4.0
+        memory:
+          size: 8Gi
+        storage:
+          size: 200Gi
+  placement:
+    akash:       
+      pricing:
+        app:
+          denom: uakt
+          amount: 10000
+deployment:
+  app:
+    akash:
+      profile: app
+      count: 1 
+     
