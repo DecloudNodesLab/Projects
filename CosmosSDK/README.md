@@ -29,7 +29,7 @@ ___
 # English version
 ### Deployment of the node.
 
-Select project and deploy [deploy.yml](./Testnets) file node with **Cloudmos (Akashlytics)** ( [use instructions here](https://github.com/Dimokus88/Akash-Nodes-Lab/blob/main/Guide/Cloudmos(Akashlytics)_EN.md) ) by setting the values ​​in the corresponding `deploy.yml` variables:
+Select project and deploy [deploy.yml](./Testnets) file node with **Cloudmos (Akashlytics)** ( [use instructions here](https://github.com/Dimokus88/Akash-Nodes-Lab/blob/main/Guide/Cloudmos(Akashlytics)_EN.md) ) by setting the values in the corresponding `deploy.yml` variables:
 - **MY_ROOT_PASSWORD** - your password for the `root` user.
 - **MONIKER**-node name.
 - **LINK_KEY**-link to direct download of `priv_validator_key.json`* file.
