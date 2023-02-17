@@ -19,7 +19,7 @@ services:
     env:
       - "SSH_PASS=" # Password for are SSH connection.
       - "MONIKER=Akash" # Node name. Use "Akash" in moniker(for example:Dimokus_Akash) to help develop the project! Имя ноды. Используйте в моникере "Akash"(например:Dimokus_Akash) что бы помочь в развитии проекта!
-      - "VALIDATOR_KEY_JSON_BASE64=" # link to the posted pirv-validator_key.json (direct download). It will also work from other Cosmos-based testnets.Ссылка на размещенный pirv-validator_key.json (прямое скачивание). Подойдет и от других тестнетов на базе Cosmos.
+      - "VALIDATOR_KEY_JSON_BASE64=" # 
       - "BINARY_LINK=https://github.com/hypersign-protocol/hid-node/releases/download/v0.1.6/hid-noded-0.1.6-linux-amd64.tar.gz"
       - "BINARY=hid-noded"
       - "RPC=http://65.108.238.61:56657"
