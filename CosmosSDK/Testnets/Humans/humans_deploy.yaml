@@ -17,9 +17,9 @@ services:
   app:
     image: ubuntu:22.04
     env:
-      - "SSH_PASS=" #Root password far a ssh connection. Пароль root для подключения по ssh.
+      - "SSH_PASS=" # Password for SSH connection.
       - "MONIKER=Akash" # Node name.Имя ноды.
-      #- "VALIDATOR_KEY_JSON_BASE64=" # link to the posted pirv-validator_key.json (direct download). It will also work from other Cosmos-based testnets.Ссылка на размещенный pirv-validator_key.json (прямое скачивание). Подойдет и от других тестнетов на базе Cosmos.
+      #- "VALIDATOR_KEY_JSON_BASE64=" # BASE64 encrypted validator key.
       - "BINARY_LINK=https://github.com/humansdotai/humans/releases/download/v1.0.0/humans_latest_linux_amd64.tar.gz"
       - "BINARY=humansd"
       - "STATE_SYNC=off"
