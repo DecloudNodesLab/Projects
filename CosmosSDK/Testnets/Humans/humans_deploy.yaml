@@ -19,7 +19,7 @@ services:
     env:
       - "SSH_PASS=" # Password for SSH connection.
       - "MONIKER=Akash" # Node name.Имя ноды.
-      #- "VALIDATOR_KEY_JSON_BASE64=" # BASE64 encrypted validator key.
+      - "VALIDATOR_KEY_JSON_BASE64=" # BASE64 encrypted validator key.
       - "BINARY_LINK=https://github.com/humansdotai/humans/releases/download/v1.0.0/humans_latest_linux_amd64.tar.gz"
       - "BINARY=humansd"
       - "STATE_SYNC=off"
