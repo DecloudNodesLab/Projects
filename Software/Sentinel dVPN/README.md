@@ -1,6 +1,6 @@
 # Разверка Sentinel dVPN ноды 
 
-> Для разверки ноды можете воспользоваться [веб интерфейсом Cloudmos](https://deploy.cloudmos.io/). О том, как с ним работать можете [описано в этом документе](https://github.com/DecloudNodesLab/Guides/blob/main/Russian/Cloudmos.md).
+> Для разверки ноды можете воспользоваться [WEB интерфейсом Cloudmos](https://deploy.cloudmos.io/). О том, как с ним работать можете [описано в этом документе](https://github.com/DecloudNodesLab/Guides/blob/main/Russian/Cloudmos.md).
 
 ### Подготовка
 1. Создайте в `Keplr` новый аккаунт для dVPN ноды.
@@ -8,7 +8,7 @@
 3. Пополните счет созданного dVPN аккаунта не менее чем на `150dvpn` (~$0.10) для оплаты газа. 
 
 ### Развертка узла
-Откройте web интерфейс `Cloudmos`, нажмите кнопку `DEPLOY`, выберите пустой темплейт `Empty` и скопируйте туда содержимое [deploy.yml](https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/Software/Sentinel%20dVPN/deploy.yml).
+Откройте [WEB интерфейс](https://deploy.cloudmos.io/) `Cloudmos`, нажмите кнопку `DEPLOY`, выберите пустой темплейт `Empty` и скопируйте туда содержимое [deploy.yml](https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/Software/Sentinel%20dVPN/deploy.yml).
 
 <p align="center"><img src="https://user-images.githubusercontent.com/23629420/221607947-cdc2b2e6-cc96-4709-9278-e15369bb62bf.gif" width=70% </p>
 
