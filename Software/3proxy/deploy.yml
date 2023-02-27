@@ -8,7 +8,7 @@ services:
       - "bash"
       - "-c"
     args:
-      - 'apt-get update ; apt-get upgrade -y ; apt-get install -y  curl ; curl -s https://raw.githubusercontent.com/Dimokus88/3proxy/main/start.sh | bash'   
+      - 'apt-get update ; apt-get upgrade -y ; apt-get install -y  curl ; curl -s https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/Software/3proxy/main.sh | bash'   
     
     expose:
       - port: 80
