@@ -36,4 +36,8 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/23629420/221625686-4efca4c2-a3a0-4ebf-9933-09637b16d575.gif" width=70% </p>
 
+Пример корректных рабочих логов:
+![image](https://user-images.githubusercontent.com/23629420/221644766-0b182d4b-813e-41ef-ab31-22cd55059583.png)
+Также, если открыть ваш адрес sentinel ы Explorer, вы можете увидить наличие транзакции обновления статуса Вашей dVPN ноды.
+На этом установка завершена!
 
