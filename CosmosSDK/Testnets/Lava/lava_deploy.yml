@@ -15,7 +15,7 @@
 version: "2.0"
 services:
   app:
-    image: dimokus88/ubuntu:1.3
+    image: ubuntu:22.04
     env:
       - "SSH_PASS=" #Root password far a ssh connection.
       - "MONIKER=Akash" # Node name. 
@@ -27,7 +27,7 @@ services:
       - "bash"
       - "-c"
     args:
-      - 'curl -s  https://raw.githubusercontent.com/DecloudNodesLab/CodeBase/main/deploy/main_cosmossdk.sh | bash '
+      - 'apt update && apt upgrade -y && apt install -y curl && curl -s  https://raw.githubusercontent.com/DecloudNodesLab/CodeBase/main/deploy/main.sh | bash '
     expose:
       - port: 80
         as: 80
