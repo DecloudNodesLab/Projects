@@ -8,6 +8,30 @@
 
 ___
 
+<div align="center">
+  
+| [Twitter Decloud Nodes Lab](https://twitter.com/NodesLab) | 
+|:--:|
+
+| [Akash Network](https://akash.network/) | [Forum Akash Network](https://forum.akash.network/) | [Sentinel](https://sentinel.co/) |
+|:--:|:--:|:--:|
+___
+
+Наши новостные каналы и русскоязычная техническая поддержка:
+
+| [Discord Akash](https://discord.akash.network/) | [Telegram Akash EN](https://t.me/AkashNW) | [Telegram Akash RU](https://t.me/akash_ru) | [Twitter Akash](https://twitter.com/akashnet_) 
+|:--:|:--:|:--:|:--:|
+  
+  
+| [Discord Sentinel](https://discord.gg/HPW52yQuQJ) | [Telegram Sentinel](https://t.me/SentinelNodeNetwork) | [Twitter Sentinel](https://twitter.com/Sentinel_co)
+|:--:|:--:|:--:|
+
+| [English guide](/English/Cloudmos.md) | 
+|:--:|  
+</div>
+
+___
+
 
 ### О ноде и Sentinel dVPN
 
@@ -56,9 +80,13 @@ ___
 
 До начала развертывания, мы не можем знать какой **IPv4** адрес нам будет назначен, поэтому мы начнем развертку с пустым `IPV4_ADDRESS`. Мы заполним его, как только получим адрес **IPv4** от провайдера и обновим наш деплой. <br/> 
 Пришло время запросить текущие предложения на рынке вычислительных мощностей. Нажимаем `CREATE DEPLOYMENT`, подтверждаем транзакцию (будет заморожено **5 АКТ**) и дожидаемся появления предложений от провайдеров.
+  
 <br/> 
+  
 <p align="center"><img src="https://user-images.githubusercontent.com/23629420/221620076-7829428a-5832-4ff9-ab91-215875651d5a.gif" width=70% </p>
+  
 <br/> 
+  
 Как Вы смогли заметить, всего было доступно **3 провайдера**, готовых предоставить вычислительные мощности **с функцией статического IP**. Я выбрал самого дешевого и продолжил разветывание.<br/> 
 В логах мы можем увидеть назначенный нам **IPv4** адрес. Он также отображается на владке `LEASES` нашего развертывания.
 Все что нам остается - это скопировать его, вставить в наш манифест (deploy.yml) на странице `UPDATE` и обновить развертывание. <br/> 
