@@ -1,5 +1,7 @@
 <div align="center"> 
 
+<p align="center"><img src="https://user-images.githubusercontent.com/23629420/219872517-2adc32b1-5f64-4d48-9a81-1e2ef6b01a53.png" width=90% </p>
+
 # Нода Sentinel dVPN в Akash Network
 
 </div>
@@ -22,7 +24,7 @@ ___
 
 > Для разверки ноды можете воспользоваться [WEB интерфейсом Cloudmos](https://deploy.cloudmos.io/). О том, как с ним работать, [описано в этом документе](https://github.com/DecloudNodesLab/Guides/blob/main/Russian/Cloudmos.md).
 
-1. Создайте в `Keplr` новый аккаунт для dVPN ноды.
+1. Создайте в `Keplr` отдельный аккаунт для dVPN ноды.
 2. Зашифруйте мнемоник фразу нового аккаунта с помощью `BASE64`, это можно сделать, как с помощью приложения `Notepad++` (*Плагины-MIME Tools-Base64 Encode*), так и с помощью любого **безопасного** онлайн шифратора Base64.
 3. Пополните счет созданного dVPN аккаунта не менее, чем на `150dvpn` (~$0.10) для оплаты газа. 
 
