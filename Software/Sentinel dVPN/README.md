@@ -37,6 +37,7 @@ ___
 
 > Universal Declaration of Human Rights, Article 19: "Everyone has the right ... to seek, receive and 
 > impart information and ideas through any media and regardless of frontiers."
+
 *Today, many states are trying to hide from users "objectionable" information in their opinion. Unfortunately, 
 from such a policy, people are deprived of the most important part 
 of their rights and freedoms. The right to seek, consume and disseminate information today is not only a 
