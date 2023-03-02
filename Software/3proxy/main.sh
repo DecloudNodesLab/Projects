@@ -8,7 +8,7 @@ cp ./bin/3proxy /usr/bin
 cat > /usr/bin/3proxy.cfg << EOF
 auth none
 log
-proxy -p8088
+proxy -p80
 EOF
 
 3proxy /usr/bin/3proxy.cfg
