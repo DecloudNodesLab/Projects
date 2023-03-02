@@ -1,6 +1,6 @@
 #!/bin bash
 apt-get install -y wget make build-essential git nginx
-service nginx start
+service start nginx 
 git clone https://github.com/3proxy/3proxy.git
 cd 3proxy
 make -f Makefile.Linux
