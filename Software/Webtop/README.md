@@ -8,10 +8,14 @@
 | [Discord Akash](https://discord.akash.network/) | [Telegram Akash EN](https://t.me/AkashNW) |  [Twitter Akash](https://twitter.com/akashnet_)| [Cloudmos Guide](https://github.com/DecloudNodesLab/Guides/blob/main/English/Cloudmos.md)
 |:--:|:--:|:--:|:--:|
 
-</div>
+
 
 # Webtop on Akash Network
+
+</div>
+
 ___
+
 Open [WEB interface](https://deploy.cloudmos.io/) `Cloudmos`.
 
 Make sure you have **more than 6 AKT** on your balance and **certificate present** (if not, refer to [Cloudmos instructions](https://github.com/DecloudNodesLab/Guides/blob/main/English/Cloudmos.md)).<br/> Next, press the `DEPLOY` button, select the empty `Empty` template and copy the content of [deploy.yml](https://github.com/DecloudNodesLab/Projects/blob/main/Software/Webtop/deploy.yml).
