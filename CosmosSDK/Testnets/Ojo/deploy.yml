@@ -22,6 +22,7 @@ services:
       - "VALIDATOR_KEY_JSON_BASE64=" 
       - "GITHUB_REPOSITORY=https://github.com/ojo-network/ojo.git"
       - "BINARY_VERSION=v0.1.2"
+      - "DENOM=uojo"
       - "RPC=https://rpc.devnet-n0.ojo-devnet.node.ojo.network:443"
     command:
       - "bash"
@@ -52,7 +53,7 @@ profiles:
         cpu:
           units: 4.0
         memory:
-          size: 8Gi
+          size: 6Gi
         storage:
           size: 200Gi
   placement:
