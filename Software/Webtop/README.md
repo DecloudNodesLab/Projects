@@ -65,3 +65,7 @@ arch-icewm	✅	IceWM Arch <br/>
 
 A detailed description of the contents of the image, its variables and settings is available at:<br/>
 https://hub.docker.com/r/linuxserver/webtop
+
+___
+
+Thank you for using **Akash Network**!
