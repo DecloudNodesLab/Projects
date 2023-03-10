@@ -6,9 +6,10 @@ sudo make -f Makefile.Linux
 cp ./bin/3proxy /usr/bin
 
 cat > /usr/bin/3proxy.cfg << EOF
-auth none
-log
-proxy -p8088
+auth none 
+log 
+proxy -p8088 
+socks -p1080 
 EOF
 
 3proxy /usr/bin/3proxy.cfg
