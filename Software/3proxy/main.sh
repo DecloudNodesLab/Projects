@@ -10,7 +10,7 @@ IP=`curl ifconfig.me`
 sleep 3
 cat > /var/www/html/wpad.dat << EOF
 function  FindProxyForURL  ( url ,  host )  { 
-if  ( shExpMatch ( host ,  '*.slack.com*.telegram.org;*.discord.com;*.ru' ))  {
+if  ( shExpMatch ( host ,  '*.slack.com*.telegram.org;*.discord.com;*.ru;*.github.com' ))  {
 return 'DIRECT';
 }
 return 'PROXY $IP:$PORT; DIRECT';
