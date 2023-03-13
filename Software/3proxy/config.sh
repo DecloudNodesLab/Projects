@@ -3,7 +3,7 @@ cat > /root/v2ray/config.json <<EOF
 {
 "inbounds": [
 {
-"port": 1080,
+"port": $PORT,
 "protocol": "vmess",
 "settings": {
 "clients": [
