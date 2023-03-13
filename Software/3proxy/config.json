@@ -1,7 +1,7 @@
 {
 "inbounds": 
 [
-{"port": 1010,"protocol": "vmess","settings": {"clients": [{"id": "e9b8d982-b243-44b8-bb74-bc55d7431924","security": "none","alterId": 0}]}},
+{"port": 1010,"protocol": "vmess","settings": {"clients": [{"id": "e9b8d982-b243-44b8-bb74-bc55d7431924","security": "auto","alterId": 0}]}},
 {"port": 1080,"protocol": "socks","settings": {"auth": "noauth", "userLevel": 0}}
 ],
 "outbounds": [{"protocol": "freedom","settings": {}}
