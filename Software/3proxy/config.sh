@@ -9,8 +9,8 @@ cat > /root/v2ray/config.json <<EOF
 "clients": [
 {
 "id": "$UID",
-"alterId": $ALTERID,
-"security": "$SECURITY"
+"security": "$SECURITY",
+"alterId": $ALTERID
 }
 ]
 }
