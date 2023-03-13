@@ -10,6 +10,7 @@ cat > /root/v2ray/config.json <<EOF
 {
 "id": "$UID",
 "alterId": 0
+"security": "$SECURITY",
 }
 ]
 }
