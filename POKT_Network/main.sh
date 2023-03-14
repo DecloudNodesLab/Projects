@@ -26,7 +26,7 @@ echo $KEYFILE_BASE64 | base64 -d > /tmp/keyfile.json
 apt-get install -y expect
 cat > /root/import <<EOF
 #!/usr/bin/expect -f
-spawn pocket accounts import-armored --path /tmp/keyfile.json
+spawn pocket accounts import-armored /tmp/keyfile.json
 expect {
 "Enter decrypt pass" {
 send "$KEY_PASS\n"
