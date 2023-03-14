@@ -37,6 +37,7 @@ send "$KEY_PASS\n"
 interact
 EOF
 sleep 15
+echo Get access
 chmod +x /root/import && /root/import
 
 
@@ -51,6 +52,7 @@ send "$KEY_PASS\n"
 interact
 EOF
 sleep 10
+echo Get access
 chmod +x /root/create_validator && /root/create_validator
 
 pocket accounts get-validator
