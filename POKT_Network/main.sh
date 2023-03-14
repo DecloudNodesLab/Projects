@@ -16,6 +16,7 @@ wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz && tar -C /usr/local -xzf go1
 PATH=$PATH:/usr/local/go/bin && echo $PATH 
 go version
 echo 'export PATH='$PATH:/usr/local/go/bin >> /root/.bashrc
+mkdir -p /root/.pocket/config
 git clone https://github.com/pokt-network/pocket-core.git && cd pocket-core
 git checkout tags/$VERSION
 go build -o /usr/bin/pocket /pocket-core/app/cmd/pocket_core/main.go && pocket version
@@ -25,7 +26,7 @@ echo $KEYFILE_BASE64 | base64 -d > /tmp/keyfile.json
 apt-get install -y expect
 cat > /root/import <<EOF
 #!/usr/bin/expect -f
-spawn pocket accounts import-armored /tmp/keyfile.json
+spawn pocket accounts import-armored --path /tmp/keyfile.json
 expect {
 "Enter decrypt pass" {
 send "$KEY_PASS\n"
