@@ -44,13 +44,11 @@ spawn pocket accounts set-validator $ADDRESS
 expect {
 "Enter the password:" {
 send "$KEY_PASS\n"
-expect "Validator Address:$ADDRESS"
-send "\n"
 }
 }
 interact
 EOF
-sleep 5
+sleep 15
 echo Get access
 sleep 5
 chmod +x /root/create_validator && /root/create_validator
