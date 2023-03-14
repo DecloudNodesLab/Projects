@@ -52,7 +52,7 @@ EOF
 chmod +x /root/create_validator && /root/create_validator
 sleep 10
 pocket accounts get-validator
-sleep 3
+sleep infinity
 fi
 
 if [[ -n $CHAINS_LINK ]] && [[ -z $CHAINS_BASE64 ]]
