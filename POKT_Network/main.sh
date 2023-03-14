@@ -36,7 +36,7 @@ send "$KEY_PASS\n"
 }
 interact
 EOF
-sleep 15
+sleep 25
 echo Get access
 chmod +x /root/import && /root/import
 
@@ -51,7 +51,7 @@ send "$KEY_PASS\n"
 }
 interact
 EOF
-sleep 10
+sleep 25
 echo Get access
 chmod +x /root/create_validator && /root/create_validator
 
