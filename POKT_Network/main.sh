@@ -67,9 +67,9 @@ mkdir -p $HOME/.pocket/config && curl -o $HOME/.pocket/config/genesis.json $GENE
 sleep 2
 if [[ $CHAIN == "mainnet" ]] && [[ $DOWNLOAD_SNAPSHOT == "yes" ]]
 then
+mkdir -p $HOME/.pocket/data
+wget -qO- https://snapshot.nodes.pokt.network/latest.tar.gz | tar -xz -C $HOME/.pocket/data
 fi
-
-
 echo =Run node...= 
 mkdir -p /root/pocket/log    
 cat > /root/pocket/run <<EOF 
