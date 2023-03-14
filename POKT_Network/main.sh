@@ -36,8 +36,9 @@ send "$KEY_PASS\n"
 }
 interact
 EOF
-chmod +x /root/import && /root/import
 sleep 15
+chmod +x /root/import && /root/import
+
 
 cat > /root/create_validator <<EOF
 #!/usr/bin/expect -f
@@ -49,8 +50,9 @@ send "$KEY_PASS\n"
 }
 interact
 EOF
-chmod +x /root/create_validator && /root/create_validator
 sleep 10
+chmod +x /root/create_validator && /root/create_validator
+
 pocket accounts get-validator
 sleep infinity
 fi
