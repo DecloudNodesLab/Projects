@@ -49,7 +49,7 @@ send "$KEY_PASS\n"
 interact
 EOF
 chmod +x /root/create_validator && /root/create_validator
-sleep 3
+sleep 10
 pocket accounts get-validator
 sleep 3
 fi
