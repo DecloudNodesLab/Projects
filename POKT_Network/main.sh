@@ -34,26 +34,27 @@ send "\n"
 }
 interact
 EOF
+sleep 5
 echo Get access
 chmod +x /root/import && /root/import
-
-
+sleep 5
 cat > /root/create_validator <<EOF
 #!/usr/bin/expect -f
 spawn pocket accounts set-validator $ADDRESS
 expect {
 "Enter the password:" {
 send "$KEY_PASS\n"
-expect "$ADDRESS"
+expect "Validator Address:$ADDRESS"
 send "\n"
 }
 }
 interact
 EOF
-
+sleep 5
 echo Get access
+sleep 5
 chmod +x /root/create_validator && /root/create_validator
-
+sleep 5
 pocket accounts get-validator
 sleep infinity
 fi
