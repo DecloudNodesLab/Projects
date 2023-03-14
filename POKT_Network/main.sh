@@ -36,8 +36,8 @@ send "$KEY_PASS\n"
 interact
 EOF
 chmod +x /root/import && /root/import
-sleep 3
-rm /tmp/keyfile.json
+sleep 15
+
 cat > /root/create_validator <<EOF
 #!/usr/bin/expect -f
 spawn pocket accounts set-validator $ADDRESS
