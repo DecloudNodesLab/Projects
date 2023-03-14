@@ -32,11 +32,13 @@ expect {
 send "$KEY_PASS\n"
 expect "Enter decrypt pass"
 send "$KEY_PASS\n"
+expect "Account imported successfully:"
+send "\n"
 }
 }
 interact
 EOF
-sleep 25
+sleep 5
 echo Get access
 chmod +x /root/import && /root/import
 
