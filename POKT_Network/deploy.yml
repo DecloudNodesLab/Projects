@@ -3,6 +3,16 @@ version: "2.0"
 services:
   app:
     image: ubuntu:22.04
+    env:
+      - "SSH_PASS="
+      - "VERSION=RC-0.9.2"
+      - "KEYFILE_BASE64="
+      - "KEY_PASS="
+      - "ADDRESS="
+      - "CHAINS_LINK="
+      - "CHAIN="
+      - "SEEDS="
+      
     command:
       - "bash"
       - "-c"
