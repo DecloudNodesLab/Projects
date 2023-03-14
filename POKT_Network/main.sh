@@ -28,13 +28,12 @@ expect {
 send "$KEY_PASS\n"
 expect "Enter decrypt pass"
 send "$KEY_PASS\n"
-expect "Account imported successfully:"
+expect "$ADDRESS"
 send "\n"
 }
 }
 interact
 EOF
-sleep 5
 echo Get access
 chmod +x /root/import && /root/import
 
@@ -45,11 +44,13 @@ spawn pocket accounts set-validator $ADDRESS
 expect {
 "Enter the password:" {
 send "$KEY_PASS\n"
+expect "$ADDRESS"
+send "\n"
 }
 }
 interact
 EOF
-sleep 25
+
 echo Get access
 chmod +x /root/create_validator && /root/create_validator
 
