@@ -2,10 +2,6 @@
 TZ=Europe/Kiev && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 apt-get install -y wget gcc make git nvme-cli nano unzip runit
 runsvdir -P /etc/service &
-curl -L https://github.com/storj/storj/releases/latest/download/uplink_linux_amd64.zip -o uplink_linux_amd64.zip
-unzip -o uplink_linux_amd64.zip
-install uplink /usr/bin/uplink
-
 if [[ -n $SSH_PASS ]]
 then
 apt-get install -y ssh 
