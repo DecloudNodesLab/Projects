@@ -1,0 +1,18 @@
+[
+  {
+    "id": "0020",
+    "url": "2222222",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  {
+    "id": "0021",
+    "url": "33333",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  }
+]
