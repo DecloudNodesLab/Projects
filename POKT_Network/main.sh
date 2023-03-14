@@ -65,6 +65,11 @@ fi
 sleep 2
 mkdir -p $HOME/.pocket/config && curl -o $HOME/.pocket/config/genesis.json $GENESIS_LINK
 sleep 2
+if [[ $CHAIN == "mainnet" ]] && [[ $DOWNLOAD_SNAPSHOT == "yes" ]]
+then
+fi
+
+
 echo =Run node...= 
 mkdir -p /root/pocket/log    
 cat > /root/pocket/run <<EOF 
