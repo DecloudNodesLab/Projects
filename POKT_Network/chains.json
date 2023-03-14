@@ -1,15 +1,7 @@
 [
   {
     "id": "0020",
-    "url": "2222222",
-    "basic_auth": {
-      "username": "",
-      "password": ""
-    }
-  },
-  {
-    "id": "0021",
-    "url": "33333",
+    "url": "https://g.w.lavanet.xyz:443/gateway/gth1/rpc-http/2a92f79a73906e9d99f4b356e7f6d4ef",
     "basic_auth": {
       "username": "",
       "password": ""
