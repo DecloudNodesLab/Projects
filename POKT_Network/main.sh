@@ -44,6 +44,8 @@ spawn pocket accounts set-validator $ADDRESS
 expect {
 "Enter the password:" {
 send "$KEY_PASS\n"
+expect " "
+send "\n"
 }
 }
 interact
