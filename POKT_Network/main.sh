@@ -52,8 +52,10 @@ sleep 5
 echo Get access 2
 sleep 5
 chmod +x /root/create_validator && /root/create_validator
-sleep 10
-echo Get access 3
+sleep 15
+
+echo Get access 3 && break
+
 sleep 5
 fi
 if [[ -n $CHAINS_LINK ]]
