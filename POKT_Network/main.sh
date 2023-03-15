@@ -56,22 +56,21 @@ sleep 5
 chmod +x /root/create_validator && /root/create_validator
 sleep 5
 fi
-mkdir -p $HOME/.pocket/config 
-if [[ -n $CHAINS_LINK ]] && [[ -z $CHAINS_BASE64 ]]
+if [[ -n $CHAINS_LINK ]]
 then
 wget -O /root/.pocket/config/chains.json $CHAINS_LINK
 fi
-if [[ -n $CHAINS_BASE64 ]] && [[ -z $CHAINS_LINK ]]
+if [[ -n $CHAINS_BASE64 ]]
 then
 echo $CHAINS_BASE64 | base64 -d > /root/.pocket/config/chains.json
 fi
 sleep 2
 curl -o $HOME/.pocket/config/genesis.json $GENESIS_LINK
 sleep 2
-if [[ $CHAIN == "mainnet" ]] && [[ $DOWNLOAD_SNAPSHOT == "yes" ]]
+if [[ -n $LINK_SNAPSHOT ]]
 then
 mkdir -p $HOME/.pocket/data
-wget -qO- https://snapshot.nodes.pokt.network/latest.tar.gz | tar -xz -C $HOME/.pocket/data
+wget -qO- $LINK_SNAPSHOT | tar -xz -C $HOME/.pocket/data
 fi
 echo =Run node...= 
 mkdir -p /root/pocket/log    
