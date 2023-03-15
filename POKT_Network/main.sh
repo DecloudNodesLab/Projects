@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 TZ=Europe/London && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 apt-get install -y wget gcc make git nvme-cli nano unzip runit
 runsvdir -P /etc/service &
@@ -40,6 +39,7 @@ send "$KEY_PASS\r"
 expect eof
 EOF
 chmod +x /root/create_validator && /root/create_validator
+pocket accounts get-validator
 fi
 echo OK
 if [[ -n $CHAINS_LINK ]]
