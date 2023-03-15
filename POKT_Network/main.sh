@@ -31,16 +31,17 @@ send "$KEY_PASS\r"
 expect eof
 EOF
 chmod +x /root/import && /root/import
-echo OK
+
 cat > /root/create_validator <<EOF
 #!/usr/bin/expect -f
 spawn pocket accounts set-validator $ADDRESS
 expect "Enter the password:" 
-send "\$KEY_PASS\r"
-interact
+send "$KEY_PASS\r"
+expect eof
 EOF
-
+chmod +x /root/create_validator && /root/create_validator
 fi
+echo OK
 if [[ -n $CHAINS_LINK ]]
 then
 wget -O /root/.pocket/config/chains.json $CHAINS_LINK
