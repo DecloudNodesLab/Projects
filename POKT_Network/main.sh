@@ -24,29 +24,22 @@ apt-get install -y expect
 cat > /root/import <<EOF
 #!/usr/bin/expect -f
 spawn pocket accounts import-armored /tmp/keyfile.json
-expect {
-"Enter decrypt pass" {
-send "$KEY_PASS\n"
+expect "Enter decrypt pass" 
+send "\$KEY_PASS\r"
 expect "Enter decrypt pass"
-send "$KEY_PASS\n"
-expect "$ADDRESS"
-send "\n"
-}
-}
-interact
+send "\$KEY_PASS\r"
+expect eof
 EOF
-(echo $KEY_PASS; echo $KEY_PASS) | pocket accounts import-armored /tmp/keyfile.json
+chmod +x /root/import && /root/import
+echo OK
 cat > /root/create_validator <<EOF
 #!/usr/bin/expect -f
 spawn pocket accounts set-validator $ADDRESS
-expect {
-"Enter the password:" {
-send "$KEY_PASS\n"
-}
-}
+expect "Enter the password:" 
+send "\$KEY_PASS\r"
 interact
 EOF
-echo OK
+
 fi
 if [[ -n $CHAINS_LINK ]]
 then
