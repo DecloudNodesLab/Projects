@@ -65,7 +65,7 @@ echo $CHAINS_BASE64 | base64 -d > /root/.pocket/config/chains.json
 fi
 echo Get access 4
 sleep 2
-curl -o $HOME/.pocket/config/genesis.json $GENESIS_LINK
+wget -o $HOME/.pocket/config/genesis.json $GENESIS_LINK
 sleep 2
 if [[ -n $LINK_SNAPSHOT ]]
 then
