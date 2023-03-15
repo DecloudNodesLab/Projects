@@ -47,7 +47,7 @@ profiles:
         memory:
           size: 16Gi
         storage:
-          size: 1000Gi 
+          size: 500Gi 
         #- name: data
         #  size: 1000Gi
         #   attributes:
