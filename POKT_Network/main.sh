@@ -35,9 +35,7 @@ send "\n"
 }
 interact
 EOF
-sleep 5
 chmod +x /root/import && /root/import
-sleep 5
 cat > /root/create_validator <<EOF
 #!/usr/bin/expect -f
 spawn pocket accounts set-validator $ADDRESS
@@ -48,7 +46,6 @@ send "$KEY_PASS\n"
 }
 interact
 EOF
-sleep 5
 echo OK
 fi
 if [[ -n $CHAINS_LINK ]]
