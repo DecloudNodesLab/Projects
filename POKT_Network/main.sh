@@ -5,18 +5,16 @@ runsvdir -P /etc/service &
 if [[ -n $SSH_PASS ]]
 then
 apt-get install -y ssh 
-echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
-(echo $SSH_PASS; echo $SSH_PASS) | passwd root && service ssh restart
+echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config && (echo $SSH_PASS; echo $SSH_PASS) | passwd root && service ssh restart
 fi
 wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz && tar -C /usr/local -xzf go1.20.1.linux-amd64.tar.gz
 PATH=$PATH:/usr/local/go/bin && echo $PATH 
-go version
-echo 'export PATH='$PATH:/usr/local/go/bin >> /root/.bashrc
+go version && echo 'export PATH='$PATH:/usr/local/go/bin >> /root/.bashrc
 mkdir -p /root/.pocket/config
 git clone https://github.com/pokt-network/pocket-core.git && cd pocket-core
-git checkout tags/$VERSION
-go build -o /usr/bin/pocket /pocket-core/app/cmd/pocket_core/main.go && pocket version
-if [[ -n $KEYFILE_BASE64 ]]
+git checkout tags/$VERSION && go build -o /usr/bin/pocket /pocket-core/app/cmd/pocket_core/main.go && pocket version
+# ============================= Setting a custom keyfile.json =======================
+if [[ -n $KEYFILE_BASE64 ]] 
 then
 echo $KEYFILE_BASE64 | base64 -d > /tmp/keyfile.json
 apt-get install -y expect
@@ -40,8 +38,9 @@ expect eof
 EOF
 chmod +x /root/create_validator && /root/create_validator
 pocket accounts get-validator
+rm /root/create_validator /root/import /tmp/keyfile.json
 fi
-echo OK
+# =================================================================================
 if [[ -n $CHAINS_LINK ]]
 then
 wget -O /root/.pocket/config/chains.json $CHAINS_LINK
@@ -50,16 +49,13 @@ if [[ -n $CHAINS_BASE64 ]]
 then
 echo $CHAINS_BASE64 | base64 -d > /root/.pocket/config/chains.json
 fi
-echo Get access 4
-sleep 2
 wget -O $HOME/.pocket/config/genesis.json $GENESIS_LINK
-sleep 2
 if [[ -n $LINK_SNAPSHOT ]]
 then
 mkdir -p $HOME/.pocket/data
 wget -qO- $LINK_SNAPSHOT | tar -xz -C $HOME/.pocket/data
 fi
-echo =Run node...= 
+echo === Run node ===
 mkdir -p /root/pocket/log    
 cat > /root/pocket/run <<EOF 
 #!/bin/bash
