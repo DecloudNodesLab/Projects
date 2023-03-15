@@ -35,7 +35,7 @@ send "\n"
 interact
 EOF
 sleep 5
-echo Get access
+echo Get access 1
 chmod +x /root/import && /root/import
 sleep 5
 cat > /root/create_validator <<EOF
@@ -49,9 +49,10 @@ send "$KEY_PASS\n"
 interact
 EOF
 sleep 15
-echo Get access
+echo Get access 2
 sleep 5
 chmod +x /root/create_validator && /root/create_validator
+echo Get access 3
 sleep 5
 fi
 if [[ -n $CHAINS_LINK ]]
@@ -62,6 +63,7 @@ if [[ -n $CHAINS_BASE64 ]]
 then
 echo $CHAINS_BASE64 | base64 -d > /root/.pocket/config/chains.json
 fi
+echo Get access 4
 sleep 2
 curl -o $HOME/.pocket/config/genesis.json $GENESIS_LINK
 sleep 2
