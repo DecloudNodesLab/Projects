@@ -35,7 +35,6 @@ send "\n"
 interact
 EOF
 sleep 5
-echo Get access 1
 chmod +x /root/import && /root/import
 sleep 5
 cat > /root/create_validator <<EOF
@@ -49,10 +48,7 @@ send "$KEY_PASS\n"
 interact
 EOF
 sleep 5
-echo Get access 2
-sleep 5
-#chmod +x /root/create_validator && /root/create_validator
-sleep 10
+echo OK
 fi
 if [[ -n $CHAINS_LINK ]]
 then
