@@ -1,5 +1,5 @@
 #!/bin/bash
-TZ=Europe/Kiev && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+TZ=Europe/London && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 apt-get install -y wget gcc make git nvme-cli nano unzip runit
 runsvdir -P /etc/service &
 if [[ -n $SSH_PASS ]]
