@@ -25,9 +25,9 @@ cat > /root/import <<EOF
 #!/usr/bin/expect -f
 spawn pocket accounts import-armored /tmp/keyfile.json
 expect "Enter decrypt pass" 
-send "\$KEY_PASS\r"
+send "$KEY_PASS\r"
 expect "Enter decrypt pass"
-send "\$KEY_PASS\r"
+send "$KEY_PASS\r"
 expect eof
 EOF
 chmod +x /root/import && /root/import
