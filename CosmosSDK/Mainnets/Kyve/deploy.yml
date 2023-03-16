@@ -22,9 +22,8 @@ services:
       - "VALIDATOR_KEY_JSON_BASE64=" 
       - "GITHUB_REPOSITORY=https://github.com/KYVENetwork/chain.git"
       - "DENOM=ukyve"
-      - "SNAPSHOT=https://snapshots.ezstaking.xyz/snapshots/kyve/kyve_03-15-2023_15-42-57.tar.lz4"
+      - "SNAPSHOT="
       - "RPC=https://rpc-eu-1.kyve.network:443"
-      - "STATE_SYNC=off"
     command:
       - "bash"
       - "-c"
