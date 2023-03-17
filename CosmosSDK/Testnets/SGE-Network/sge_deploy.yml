@@ -22,6 +22,7 @@ services:
       - "VALIDATOR_KEY_JSON_BASE64=" 
       - "GITHUB_REPOSITORY=https://github.com/sge-network/sge"
       - "RPC=http://rpc.sge.ppnv.space:29657"
+      - "GO_VERSION=1.18"
     command:
       - "bash"
       - "-c"
