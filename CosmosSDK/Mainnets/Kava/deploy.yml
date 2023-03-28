@@ -22,6 +22,8 @@ services:
       - "VALIDATOR_KEY_JSON_BASE64=" 
       - "GITHUB_REPOSITORY=https://github.com/Kava-Labs/kava"
       - "RPC=https://rpc.data.kava.io:443"
+      - "BINARY_VERSION=v0.21.1"
+      - "DENOM=ukava"
     command:
       - "bash"
       - "-c"
