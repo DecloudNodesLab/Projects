@@ -49,9 +49,9 @@ profiles:
     app:
       resources:
         cpu:
-          units: 4.0
+          units: 6.0
         memory:
-          size: 6Gi
+          size: 32Gi
         storage:
           size: 200Gi
   placement:
