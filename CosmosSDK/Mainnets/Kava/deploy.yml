@@ -23,7 +23,7 @@ services:
       - "GITHUB_REPOSITORY=https://github.com/Kava-Labs/kava"
       - "RPC=https://kava-rpc.polkachu.com:443"
       #- "SNAPSHOT=https://snapshots.polkachu.com/snapshots/kava/kava_4155519.tar.lz4" # Use actual snapshot from https://polkachu.com/tendermint_snapshots/kava
-      - "BINARY_VERSION=v0.21.1"
+      - "BINARY_LINK=https://github.com/Kava-Labs/kava/releases/download/v0.21.0/kava-v0.21.0-linux-amd64"
       - "DENOM=ukava"
       - "PRUNING=default"
       - "GENESIS=https://kava-genesis-files.s3.us-east-1.amazonaws.com/kava_2222-10/genesis.json"
