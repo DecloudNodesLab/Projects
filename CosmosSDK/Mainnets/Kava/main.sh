@@ -164,10 +164,12 @@ then
 	then
 	KEEP_RECENT=1000 && INTERVAL=10
 	fi
-sed -i -e "s/^pruning *=.*/pruning = \"custom\"/" /root/$FOLDER/config/app.toml && \
+	PRUNING=custom
+fi
+sed -i -e "s/^pruning *=.*/pruning = \"$PRUNING\"/" /root/$FOLDER/config/app.toml && \
 sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$KEEP_RECENT\"/" /root/$FOLDER/config/app.toml && \
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$INTERVAL\"/" /root/$FOLDER/config/app.toml
-fi
+
 if [[ -n $SNAPSHOT_INTERVAL ]]
 then
 sed -i.bak -e "s/^snapshot-interval *=.*/snapshot-interval = \"$SNAPSHOT_INTERVAL\"/" /root/$FOLDER/config/app.toml
