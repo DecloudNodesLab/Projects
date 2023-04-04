@@ -160,14 +160,12 @@ sed -i.bak -e "s_"tcp://127.0.0.1:26657"_"tcp://0.0.0.0:26657"_;" /root/$FOLDER/
 fi
 if [[ -z $PRUNING ]]
 then
-	if [[ -z $KEEP_RECENT ]] || [[ -z $INTERVAL ]]
-	then
-	KEEP_RECENT=1000 && INTERVAL=10
-	fi
-	PRUNING=custom
+KEEP_RECENT=5000 && INTERVAL=1000 && KEEP_EVERY=10000
+PRUNING=custom
 fi
 sed -i -e "s/^pruning *=.*/pruning = \"$PRUNING\"/" /root/$FOLDER/config/app.toml && \
 sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$KEEP_RECENT\"/" /root/$FOLDER/config/app.toml && \
+sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$KEEP_EVERY\"/" /root/$FOLDER/config/app.toml && \
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$INTERVAL\"/" /root/$FOLDER/config/app.toml
 
 if [[ -n $SNAPSHOT_INTERVAL ]]
