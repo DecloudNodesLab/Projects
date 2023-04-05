@@ -27,7 +27,7 @@ services:
       - "bash"
       - "-c"
     args:
-      - 'curl -s  https://raw.githubusercontent.com/Dimokus88/Akash-Nodes-Lab/main/Mainnets/Akash%20Network/main.sh | bash '
+      - 'curl -s  https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/CosmosSDK/Mainnets/Akash-Network/main.sh | bash '
     expose:
       - port: 80
         as: 80
