@@ -23,7 +23,7 @@ services:
       - "bash"
       - "-c"
     args:
-      - "curl https://raw.githubusercontent.com/Dimokus88/Akash-Nodes-Lab/main/Active_testnets/Aleo/main.sh | bash"      
+      - "curl https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/Aleo/main.sh | bash"      
     expose:
       - port: 4133
         as: 4133
