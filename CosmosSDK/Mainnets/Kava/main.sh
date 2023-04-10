@@ -160,8 +160,8 @@ sed -i.bak -e "s_"tcp://127.0.0.1:26657"_"tcp://0.0.0.0:26657"_;" /root/$FOLDER/
 fi
 if [[ -z $PRUNING ]]
 then
-KEEP_RECENT=5000 && INTERVAL=1000 && KEEP_EVERY=10000
-PRUNING=custom
+KEEP_RECENT=0 && INTERVAL=0 && KEEP_EVERY=0
+PRUNING=everything
 fi
 sed -i -e "s/^pruning *=.*/pruning = \"$PRUNING\"/" /root/$FOLDER/config/app.toml && \
 sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$KEEP_RECENT\"/" /root/$FOLDER/config/app.toml && \
