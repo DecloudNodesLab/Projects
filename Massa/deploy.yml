@@ -6,12 +6,7 @@ endpoints:
 services:
   app:
     image: ubuntu:22.04
-    expose:
-      - port: 80
-        as: 80
-        proto: tcp
-        to:
-          - global: true            
+    expose:       
       - port: 22
         as: 22
         proto: tcp
@@ -33,7 +28,7 @@ services:
     env:
      - "IP="
      - "my_discord_id="
-     - "my_wallet_privkey=" #Massa wallet privat key
+     - "my_wallet_privkey=" #Massa wallet private key
      - "my_root_password=" #For ssh connection
      - "MASSA_LINK=https://github.com/massalabs/massa/releases/download/TEST.20.1/massa_TEST.20.1_release_linux.tar.gz"
      - "pass="
