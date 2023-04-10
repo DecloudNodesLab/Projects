@@ -33,7 +33,7 @@ services:
       - "bash"
       - "-c"
     args:
-      - 'apt update && apt upgrade -y && apt install -y curl && curl -s https://raw.githubusercontent.com/DecloudNodesLab/CodeBase/main/deploy/main_cosmossdk.sh | bash '
+      - 'apt update && apt upgrade -y && apt install -y curl && curl -s https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/CosmosSDK/Mainnets/Kava/main.sh | bash '
     expose:
       - port: 22
         as: 22
