@@ -21,8 +21,8 @@ services:
       - "MONIKER=Akash" # Node name.Имя ноды.
       - "VALIDATOR_KEY_JSON_BASE64=" 
       - "GITHUB_REPOSITORY=https://github.com/realiotech/realio-network"
-      - "BINARY_VERSION=v0.7.2"
-      - "RPC=https://realio-rpc.42cabi.net:443"
+      - "BINARY_VERSION=v0.8.0-rc4"
+      - "RPC=https://rpc.realio.nodestake.top:443"
     command:
       - "bash"
       - "-c"
