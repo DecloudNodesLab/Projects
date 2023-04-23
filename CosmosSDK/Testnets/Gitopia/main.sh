@@ -144,6 +144,7 @@ sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_rec
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" /root/$BINARY/config/app.toml
 snapshot_interval="2000" && \
 sed -i.bak -e "s/^snapshot-interval *=.*/snapshot-interval = \"$snapshot_interval\"/" /root/$BINARY/config/app.toml
+sed -i.bak -e "s/^flush_throttle_timeout *=.*/flush_throttle_timeout = \"50ms\"/;" /root/$BINARY/config/config.toml
 #-----------------------------------------------------------
 # ====================RPC======================
 if [[ -n ${SNAP_RPC} ]]
