@@ -28,20 +28,14 @@ services:
     args:
       - 'apt update && apt upgrade -y && apt install -y curl && curl -s https://raw.githubusercontent.com/DecloudNodesLab/CodeBase/main/deploy/main_cosmossdk.sh | bash '
     expose:
-      - port: 80
+      - port: 26657
         as: 80
         to:
           - global: true
       - port: 22
-        as: 22
         to:
           - global: true
       - port: 26656
-        as: 26656
-        to:
-          - global: true
-      - port: 26657
-        as: 26657
         to:
           - global: true
 profiles:
