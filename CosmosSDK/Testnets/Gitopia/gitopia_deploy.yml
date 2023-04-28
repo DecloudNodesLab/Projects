@@ -29,7 +29,7 @@ services:
       - "bash"
       - "-c"
     args:
-      - 'curl -s https://raw.githubusercontent.com/Dimokus88/Akash-Nodes-Lab/main/Active_testnets/Gitopia/main.sh | bash '
+      - 'https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/CosmosSDK/Testnets/Gitopia/main.sh | bash '
     expose:
       - port: 80
         as: 80
