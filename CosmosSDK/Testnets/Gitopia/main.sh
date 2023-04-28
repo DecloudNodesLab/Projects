@@ -163,7 +163,9 @@ then
 fi
 if [[ -n ${VALIDATOR_KEY_JSON_BASE64} ]]
 then
-echo $VALIDATOR_KEY_JSON_BASE64 | base64 -d > /root/$FOLDER/config/priv_validator_key.json
+echo $VALIDATOR_KEY_JSON_BASE64 | base64 -d > /root/$BINARY/config/priv_validator_key.json
+cat /root/$BINARY/config/priv_validator_key.json
+sleep 10
 fi
 }
 RUN (){
