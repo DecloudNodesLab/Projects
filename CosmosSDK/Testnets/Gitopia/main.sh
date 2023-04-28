@@ -161,40 +161,10 @@ then
 	s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 	s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" /root/$BINARY/config/config.toml
 fi
-#================================================
-wget -O /tmp/priv_validator_key.json ${LINK_KEY}
-file=/tmp/priv_validator_key.json
-if  [[ -f "$file" ]]
+if [[ -n ${VALIDATOR_KEY_JSON_BASE64} ]]
 then
-	      sleep 2
-	      cd /
-	      rm /root/$BINARY/config/priv_validator_key.json
-	      echo ==========priv_validator_key found==========
-	      echo ========Обнаружен priv_validator_key========
-	      cp /tmp/priv_validator_key.json /root/$BINARY/config/
-	      echo ========Validate the priv_validator_key.json file=========
-	      echo ==========Сверьте файл priv_validator_key.json============
-	      cat /tmp/priv_validator_key.json
-	      sleep 10
-    else     	
-    	echo "==================================================================================="
-	echo "======== priv_validator_key not found! Specify direct download link ==============="
-	echo "===== of the validator key file in the LINK_KEY variable in your deploy.yml ======="
-	echo "===== If you don't have a key file, use the instructions at the link below ======="
-	echo "== https://github.com/Dimokus88/guides/blob/main/Cosmos%20SDK/valkey/README.md ===="
-	echo "==================================================================================="
-	echo "========  priv_validator_key не найден! Укажите ссылку напрямое скачивание  ======="
-	echo "========  файла ключа валидатора в переменной LINK_KEY в вашем deploy.yml  ========"
-	echo "=====  Если у вас нет файла ключа, воспользуйтесь инструкцией по ссылке ниже ====="
-	echo "== https://github.com/Dimokus88/guides/blob/main/Cosmos%20SDK/valkey/README.md ===="
-	echo "==================================================================================="
-	echo "============= The node is running with the generated validator key! ==============="
-	echo "==================================================================================="
-	echo "================= Нода запущена с сгенерированным ключом валидатора! =============="
-	echo "==================================================================================="
-	RUN
-	sleep infinity 	
-    fi
+echo $VALIDATOR_KEY_JSON_BASE64 | base64 -d > /root/$FOLDER/config/priv_validator_key.json
+fi
 }
 RUN (){
 # +++++++++++ Защита от двойной подписи ++++++++++++
