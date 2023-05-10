@@ -1,0 +1,63 @@
+##############################
+# Validator node on Akash Network
+#
+# Guide for deploy node https://github.com/Dimokus88/Akash-Nodes-Lab/blob/main/Guide/README.md
+# Site project: https://www.cascadia.foundation/
+# Discord or Telegram project: http://discord.gg/cascadia
+# Twitter: https://twitter.com/CascadiaSystems
+# Explorer: https://explorer.nodestake.top/cascadia-testnet
+##############################
+# Akash Discord: https://discord.gg/ybKMsYYZkx
+# Akash Telegram EN: https://t.me/AkashNW
+# Akash Telegram RU: https://t.me/akash_ru
+##############################
+---
+version: "2.0"
+services:
+  app:
+    image: ubuntu:22.04
+    env:
+      - "SSH_PASS="
+      - "MONIKER=Akash" 
+      - "VALIDATOR_KEY_JSON_BASE64=" 
+      - "GITHUB_REPOSITORY=https://github.com/CascadiaFoundation/cascadia"
+      - "RPC=https://cascadia-testnet.nodejumper.io:443"
+      - "FOLDER=.cascadiad"
+    command:
+      - "bash"
+      - "-c"
+    args:
+      - 'apt update && apt upgrade -y && apt install -y curl && curl -s https://raw.githubusercontent.com/DecloudNodesLab/CodeBase/main/deploy/main_cosmossdk.sh | bash '
+    expose:
+      - port: 22
+        to:
+          - global: true
+      - port: 26656
+        to:
+          - global: true
+      - port: 26657
+        as: 80
+        to:
+          - global: true
+profiles:
+  compute:
+    app:
+      resources:
+        cpu:
+          units: 4.0
+        memory:
+          size: 6Gi
+        storage:
+          size: 200Gi
+  placement:
+    akash:       
+      pricing:
+        app:
+          denom: uakt
+          amount: 10000
+deployment:
+  app:
+    akash:
+      profile: app
+      count: 1 
+     
