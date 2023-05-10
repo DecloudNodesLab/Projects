@@ -21,7 +21,8 @@ services:
       - "MONIKER=Akash" 
       - "VALIDATOR_KEY_JSON_BASE64=" 
       - "GITHUB_REPOSITORY=https://github.com/BBlockLabs/BonusBlock-chain"
-      - "RPC=http://bonusblock-testnet-p2p.alter.network:26657/"
+      - "RPC=http://bonusblock-testnet-p2p.alter.network:26657"
+      - "FOLDER=.bonusblock"
     command:
       - "bash"
       - "-c"
