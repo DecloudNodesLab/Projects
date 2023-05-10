@@ -44,11 +44,11 @@ profiles:
     app:
       resources:
         cpu:
-          units: 2.0
+          units: 4.0
         memory:
-          size: 4Gi
+          size: 6Gi
         storage:
-          size: 80Gi
+          size: 150Gi
   placement:
     akash:       
       pricing:
