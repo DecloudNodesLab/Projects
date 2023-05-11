@@ -30,7 +30,7 @@ services:
      - "my_discord_id="
      - "my_wallet_privkey=" #Massa wallet private key
      - "my_root_password=" #For ssh connection
-     - "MASSA_LINK=https://github.com/massalabs/massa/releases/download/TEST.21.0/massa_TEST.21.0_release_linux.tar.gz"
+     - "MASSA_LINK=https://github.com/massalabs/massa/releases/download/TEST.22.0/massa_TEST.22.0_release_linux.tar.gz"
      - "pass="
    
     command:
