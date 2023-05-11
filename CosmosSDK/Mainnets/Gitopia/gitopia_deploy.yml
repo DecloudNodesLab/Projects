@@ -29,7 +29,7 @@ services:
       - "bash"
       - "-c"
     args:
-      - 'curl -s https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/CosmosSDK/Testnets/Gitopia/main.sh | bash '
+      - 'curl -s https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/CosmosSDK/Mainnets/Gitopia/main.sh | bash '
     expose:
       - port: 22
         to:
