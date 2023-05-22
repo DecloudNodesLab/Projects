@@ -9,7 +9,7 @@ services:
       - GO_VERSION=1.18
       - RPC=https://kava-rpc.polkachu.com:443
       - SNAPSHOT= # Link to actual snapshot
-      - BINARY_VERSION=v0.21.0
+      - BINARY_VERSION=v0.23.0
       - BINARY=kava
       - DENOM=ukava 
       - PRUNING=everything
