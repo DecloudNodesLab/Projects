@@ -28,7 +28,7 @@ mkdir -p /root/client/log
 cat > /root/client/run <<EOF 
 #!/bin/bash
 exec 2>&1
-exec $(which snarkos) start --nodisplay --client `echo $PRIVAT_CODE | base64 -d`
+exec $(which snarkos) start --client `echo $PRIVAT_CODE | base64 -d`
 EOF
 cat > /root/client/log/run <<EOF 
 #!/bin/bash
@@ -49,7 +49,7 @@ mkdir /root/prover && mkdir /root/prover/log
 cat > /root/prover/run <<EOF 
 #!/bin/bash
 exec 2>&1
-exec $(which snarkos) start --nodisplay --prover `echo $PRIVAT_CODE | base64 -d`
+exec $(which snarkos) start --prover `echo $PRIVAT_CODE | base64 -d`
 EOF
 cat > /root/prover/log/run <<EOF 
 #!/bin/bash
