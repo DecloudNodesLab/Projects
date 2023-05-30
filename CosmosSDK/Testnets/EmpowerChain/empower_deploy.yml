@@ -21,7 +21,7 @@ services:
       - "SSH_PASS="
       - "MONIKER=Akash" 
       - "VALIDATOR_KEY_JSON_BASE64=" 
-      - "GITHUB_REPOSITORY=https://github.com/empowerchain/empowerchain.git"
+      - "GITHUB_REPOSITORY=https://github.com/EmpowerPlastic/empowerchain"
       #- "RPC=https://empower-testnet.nodejumper.io:443"
       - "BINARY_VERSION=circulus-1"
       - "GENESIS=https://raw.githubusercontent.com/EmpowerPlastic/empowerchain/main/testnets/circulus-1/genesis.json"
