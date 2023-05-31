@@ -20,8 +20,10 @@ services:
       - "SSH_PASS="
       - "MONIKER=Akash" 
       - "VALIDATOR_KEY_JSON_BASE64=" 
-      - "GITHUB_REPOSITORY=https://github.com/noria-net/noria/releases/tag/v1.2.1"
+      - "BINARY_LINK=https://github.com/noria-net/noria/releases/download/v1.2.1/noria_linux_amd64.tar.gz"
       - "RPC=https://noria-testnet.rpc.kjnodes.com:443"
+      - "BINARY=noriad"
+      - "SNAPSHOT=https://snapshots.kjnodes.com/noria-testnet/snapshot_latest.tar.lz4"
     command:
       - "bash"
       - "-c"
