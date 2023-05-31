@@ -14,10 +14,10 @@ Deploying on Akash Network! [Guides](https://github.com/DecloudNodesLab/Guides).
 
 
 ## Testnets
-|[Althea](/CosmosSDK/Testnets/Althea)|[Andromeda](/CosmosSDK/Testnets/Andromeda)|[Bonusblock](/CosmosSDK/Testnets/Bonusblock)|[Cascadia](/CosmosSDK/Testnets/Cascadia)|[Celestia](/CosmosSDK/Testnets/Celestia)|[Crowd_control](/CosmosSDK/Testnets/Crowd_control)|[Deweb](/CosmosSDK/Testnets/Deweb)|[EmpowerChain](/CosmosSDK/Testnets/EmpowerChain)|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|[Hypersign](/CosmosSDK/Testnets/Hypersign)|[Lava](/CosmosSDK/Testnets/Lava)|[Loyal](/CosmosSDK/Testnets/Loyal)|[Nibiru](/CosmosSDK/Testnets/Nibiru)|[Noria](/CosmosSDK/Testnets/Noria)|[Okp4](/CosmosSDK/Testnets/Okp4)|[SAO_Network](/CosmosSDK/Testnets/SAO_Network)|[SGE-Network](/CosmosSDK/Testnets/SGE-Network)|
-|[Source_Protocol](/CosmosSDK/Testnets/Source_Protocol)|[Massa](/Massa)|
+|[Althea](/CosmosSDK/Testnets/Althea)|[Andromeda](/CosmosSDK/Testnets/Andromeda)|[Bonusblock](/CosmosSDK/Testnets/Bonusblock)|[Cascadia](/CosmosSDK/Testnets/Cascadia)|[Celestia](/CosmosSDK/Testnets/Celestia)|[Crowd_control](/CosmosSDK/Testnets/Crowd_control)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|[Deweb](/CosmosSDK/Testnets/Deweb)|[EmpowerChain](/CosmosSDK/Testnets/EmpowerChain)|[Hypersign](/CosmosSDK/Testnets/Hypersign)|[Lava](/CosmosSDK/Testnets/Lava)|[Loyal](/CosmosSDK/Testnets/Loyal)|[Nibiru](/CosmosSDK/Testnets/Nibiru)|
+|[Noria](/CosmosSDK/Testnets/Noria)|[Massa](/Massa)|[Okp4](/CosmosSDK/Testnets/Okp4)|[SAO_Network](/CosmosSDK/Testnets/SAO_Network)|[SGE-Network](/CosmosSDK/Testnets/SGE-Network)|[Source_Protocol](/CosmosSDK/Testnets/Source_Protocol)|
 
 
 ## Software
