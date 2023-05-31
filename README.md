@@ -1,12 +1,14 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/23629420/219872517-2adc32b1-5f64-4d48-9a81-1e2ef6b01a53.png" width=90% </p>
   
 # Projects
-Projects deploying on Akash Network
+
+<p align="center"> Deploying on Akash Network </p>
+  
 ## Mainnets
 
-| [Akash-Network](/CosmosSDK/Mainnets/Akash-Network) | [Sentinel](/CosmosSDK/Mainnets/Sentinel) | [Gitopia](/CosmosSDK/Mainnets/Gitopia) | [Kava](/CosmosSDK/Mainnets/Kava) | [Kyve](/CosmosSDK/Mainnets/Kyve) | [Vidulum](/CosmosSDK/Mainnets/Vidulum)| [Desmos](/CosmosSDK/Mainnets/Desmos) | [Realio](/CosmosSDK/Mainnets/Realio) |
+| [Akash-Network](/CosmosSDK/Mainnets/Akash-Network) | [Sentinel chain](/CosmosSDK/Mainnets/Sentinel) |[Sentinel dVPN](https://github.com/DecloudNodesLab/Sentinel_dVPN)|[Gitopia](/CosmosSDK/Mainnets/Gitopia) | [Kava](/CosmosSDK/Mainnets/Kava) | [Kyve](/CosmosSDK/Mainnets/Kyve) | [Vidulum](/CosmosSDK/Mainnets/Vidulum)| [Desmos](/CosmosSDK/Mainnets/Desmos) |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-
+| [Realio](/CosmosSDK/Mainnets/Realio) |
 
 
 ## Testnets
