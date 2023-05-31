@@ -2,7 +2,9 @@
   
 # Projects
 
-<p align="center"> Deploying on Akash Network </p>
+Deploying on Akash Network! [Guides](https://github.com/DecloudNodesLab/Guides).
+
+Разворачивайте на Akash Network! [Инструкция](https://github.com/DecloudNodesLab/Guides).
   
 ## Mainnets
 
