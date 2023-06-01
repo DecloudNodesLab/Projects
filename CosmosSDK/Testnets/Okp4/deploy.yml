@@ -24,7 +24,9 @@ services:
       - "RPC=https://okp4-testnet-rpc.polkachu.com:443"
       - "GENESIS=https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton-1/genesis.json"
       - "FOLDER=.okp4d"
+      - "SNAPSHOT=https://snapshots.kjnodes.com/okp4-testnet/snapshot_latest.tar.lz4"
       - "DENOM=uknow"
+      - "BINARY_VERSION=v4.1.0"
     command:
       - "bash"
       - "-c"
