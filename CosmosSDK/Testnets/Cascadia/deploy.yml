@@ -23,6 +23,7 @@ services:
       - "GITHUB_REPOSITORY=https://github.com/CascadiaFoundation/cascadia"
       - "RPC=https://cascadia-testnet.nodejumper.io:443"
       - "FOLDER=.cascadiad"
+      - "SNAPSHOT=https://ss.nodeist.net/t/cascadia/snapshot_latest.tar.lz4"
     command:
       - "bash"
       - "-c"
