@@ -1,0 +1,65 @@
+##############################
+# Validator node on Akash Network
+#
+# Guide for deploy node https://github.com/DecloudNodesLab/Guides/blob/main/README.md
+# Site project: https://timpi.io/
+# Discord or Telegram project: https://discord.com/invite/WWPfnwye2P
+# Twitter:https://twitter.com/Timpi_TheNewWay
+# Explorer: https://explorer.nodestake.top/timpi-testnet
+##############################
+# Akash Discord: https://discord.gg/ybKMsYYZkx
+# Akash Telegram EN: https://t.me/AkashNW
+# Akash Telegram RU: https://t.me/akash_ru
+##############################
+---
+version: "2.0"
+services:
+  app:
+    image: ubuntu:22.04
+    env:
+      - "SSH_PASS="
+      - "MONIKER=Akash" 
+      - "VALIDATOR_KEY_JSON_BASE64=" 
+      - "BINARY_LINK=https://drive.google.com/uc?export=download&id=1aP3XmrfIOJp4OiOX-61AFC9uGK7VI3W8"
+      - "RPC=https://rpc-t.timpi.nodestake.top:443"
+      - "SNAPSHOT=https://ss-t.timpi.nodestake.top/2023-06-01_timpi_105036.tar.lz4"
+      - "BINARY=TimpiChain"
+      - "FOLDER=.TimpiChain"
+    command:
+      - "bash"
+      - "-c"
+    args:
+      - 'apt update && apt upgrade -y && apt install -y curl && curl -s https://raw.githubusercontent.com/DecloudNodesLab/CodeBase/main/deploy/main_cosmossdk.sh | bash '
+    expose:
+      - port: 22
+        to:
+          - global: true
+      - port: 26656
+        to:
+          - global: true
+      - port: 26657
+        as: 80
+        to:
+          - global: true
+profiles:
+  compute:
+    app:
+      resources:
+        cpu:
+          units: 4.0
+        memory:
+          size: 6Gi
+        storage:
+          size: 200Gi
+  placement:
+    akash:       
+      pricing:
+        app:
+          denom: uakt
+          amount: 10000
+deployment:
+  app:
+    akash:
+      profile: app
+      count: 1 
+     
