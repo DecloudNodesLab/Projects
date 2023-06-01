@@ -24,6 +24,7 @@ services:
       - "RPC=https://rpc-t.okp4.nodestake.top:443"
       - "GENESIS=https://raw.githubusercontent.com/okp4/networks/main/chains/nemeton-1/genesis.json"
       - "FOLDER=.okp4d"
+      - "PEERS="
     command:
       - "bash"
       - "-c"
