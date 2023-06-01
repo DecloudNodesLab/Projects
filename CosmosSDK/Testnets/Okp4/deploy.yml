@@ -1,8 +1,16 @@
+##############################
+# Validator node on Akash Network
+#
 # Guide for deploy node https://github.com/DecloudNodesLab/Guides/blob/main/README.md
 # Site project: https://okp4.network/
 # Discord or Telegram project: https://discord.com/invite/okp4
 # Twitter: https://twitter.com/OKP4_Protocol
 # Explorer: https://explorer.nodestake.top/okp4-testnet/
+##############################
+# Akash Discord: https://discord.gg/ybKMsYYZkx
+# Akash Telegram EN: https://t.me/AkashNW
+# Akash Telegram RU: https://t.me/akash_ru
+##############################
 ---
 version: "2.0"
 services:
