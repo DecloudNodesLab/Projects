@@ -17,7 +17,8 @@ Deploying on Akash Network! [Guides](https://github.com/DecloudNodesLab/Guides).
 |[Althea](/CosmosSDK/Testnets/Althea)|[Andromeda](/CosmosSDK/Testnets/Andromeda)|[Bonusblock](/CosmosSDK/Testnets/Bonusblock)|[Cascadia](/CosmosSDK/Testnets/Cascadia)|[Celestia](/CosmosSDK/Testnets/Celestia)|[Crowd_control](/CosmosSDK/Testnets/Crowd_control)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |[Deweb](/CosmosSDK/Testnets/Deweb)|[EmpowerChain](/CosmosSDK/Testnets/EmpowerChain)|[Hypersign](/CosmosSDK/Testnets/Hypersign)|[Lava](/CosmosSDK/Testnets/Lava)|[Loyal](/CosmosSDK/Testnets/Loyal)|[Nibiru](/CosmosSDK/Testnets/Nibiru)|
-|[Noria](/CosmosSDK/Testnets/Noria)|[Massa](/Massa)|[Okp4](/CosmosSDK/Testnets/Okp4)|[SAO_Network](/CosmosSDK/Testnets/SAO_Network)|[SGE-Network](/CosmosSDK/Testnets/SGE-Network)|[Source_Protocol](/CosmosSDK/Testnets/Source_Protocol)|
+|[Noria](/CosmosSDK/Testnets/Noria)|[Massa](/Massa)|[Okp4](/CosmosSDK/Testnets/Okp4)|[Timpi Chain](/CosmosSDK/Testnets/TimpiChain)|[SAO_Network](/CosmosSDK/Testnets/SAO_Network)|[SGE-Network](/CosmosSDK/Testnets/SGE-Network)|
+|[Source_Protocol](/CosmosSDK/Testnets/Source_Protocol)|
 
 
 ## Software
