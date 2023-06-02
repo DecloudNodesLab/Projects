@@ -15,7 +15,7 @@
 version: "2.0"
 services:
   app:
-    image: ubuntu:20.04
+    image: ubuntu:22.04
     env:
       - "SSH_PASS=" #Root password far a ssh connection. Пароль root для подключения по ssh.
       - "MONIKER=Akash" # Node name.Имя ноды.
