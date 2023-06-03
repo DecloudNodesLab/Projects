@@ -22,7 +22,7 @@ services:
       - "GITHUB_REPOSITORY=https://github.com/sentinel-official/hub.git"
       - "BINARY_VERSION=v0.10.1"
       - "BINARY=sentinelhub"
-      - "SNAPSHOT=https://snapshots.autostake.com/sentinelhub-2/sentinelhub-2-Jun-02.tar.lz4"
+      - "SNAPSHOT="
       - "DENOM=udvpn"
       - "RPC=https://rpc.sentinel.co:443"
     command:
