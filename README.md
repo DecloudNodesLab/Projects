@@ -1,8 +1,6 @@
 # Projects
 
-Deploying on Akash Network! [Guides](https://github.com/DecloudNodesLab/Guides).
-
-Разворачивайте на Akash Network! [Инструкции](https://github.com/DecloudNodesLab/Guides).
+Deploying on Akash Network! [Guides](https://github.com/DecloudNodesLab/Guides). | Разворачивайте на Akash Network! [Инструкции](https://github.com/DecloudNodesLab/Guides).
   
 ## Mainnets
 
