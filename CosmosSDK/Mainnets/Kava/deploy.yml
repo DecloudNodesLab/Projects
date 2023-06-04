@@ -6,6 +6,7 @@ services:
       - SSH_PASS=
       - MONIKER=Akash
       - GITHUB_REPOSITORY=https://github.com/Kava-Labs/kava
+      - "VALIDATOR_KEY_JSON_BASE64=" 
       - GO_VERSION=1.18
       - RPC=https://kava-rpc.polkachu.com:443
       - SNAPSHOT= # Link to actual snapshot
