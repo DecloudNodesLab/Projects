@@ -22,6 +22,7 @@ services:
       - "VALIDATOR_KEY_JSON_BASE64=" 
       - "GITHUB_REPOSITORY=https://github.com/althea-net/althea-chain"
       - "RPC=https://althea-testnet-rpc.polkachu.com:443"
+      - "SNAPSHOT="
     command:
       - "bash"
       - "-c"
