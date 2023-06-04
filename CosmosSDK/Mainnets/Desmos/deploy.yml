@@ -17,14 +17,14 @@ services:
   app:
     image: ubuntu:22.04
     env:
-      - "SSH_PASS=" #Root password far a ssh connection. Пароль root для подключения по ssh.
-      - "MONIKER=Powered_by_Akash" # Node name.Имя ноды.
+      - "SSH_PASS=" 
+      - "MONIKER=Powered_by_Akash"
       - "VALIDATOR_KEY_JSON_BASE64=" 
-      - "BINARY_LINK=https://github.com/desmos-labs/desmos/releases/download/v5.0.1/desmos-5.0.1-linux-amd64"
+      - "BINARY_LINK=https://github.com/desmos-labs/desmos/releases/download/v4.8.1/desmos-4.8.1-linux-amd64"
       - "BINARY=desmos"
-      - "SNAPSHOT=" # Use https://app.nodejumper.io/desmos/sync
+      - "SNAPSHOT="
+      - "PEERS=f090ead239426219d605b392314bdd73d16a795f@desmos.nodejumper.io:32656,862f0129322c2a0872e6440e5e896cabef0146fe@185.225.232.183:26656,23721024ea06e3610ab1f6a34b51f592cd1a3589@139.162.81.104:26656,3650e48fcec1b35e9bee070b8806d0cd7e3409f4@35.228.235.170:26656,015fc7e8ca23e4d1d003911b4fe086e345e6a014@45.9.60.250:26656,ce63f6fb85eedbe07b5950601309eada34e55071@5.34.178.17:26656,dfc0639d17b290db7339d16cca2673f7812d4e5f@65.108.4.28:26656,e25f8952bd1a664053602507aeec5536713b7d6a@51.81.155.189:10456,6dabce67a9e75edb290bda7bf80b26aa47d87192@67.211.210.50:26656,961d438daf13016d580e5809e3255c2aaae928ad@5.9.50.59:22656,8baa598e22a2c673f9a50c893b091b37bb572771@217.174.247.59:15601"
       - "RPC=https://rpc.desmos.forbole.com:443"
-      - "PEERS=" # Use https://app.nodejumper.io/desmos/sync
     command:
       - "bash"
       - "-c"
@@ -50,7 +50,7 @@ profiles:
         memory:
           size: 4Gi
         storage:
-          size: 100Gi
+          size: 80Gi
   placement:
     akash:       
       pricing:
