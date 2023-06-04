@@ -23,6 +23,7 @@ services:
       - "GITHUB_REPOSITORY=https://github.com/althea-net/althea-chain"
       - "RPC=https://althea-testnet-rpc.polkachu.com:443"
       - "SNAPSHOT="
+      - "PEERS="
     command:
       - "bash"
       - "-c"
