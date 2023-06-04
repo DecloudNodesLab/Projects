@@ -22,8 +22,9 @@ services:
       - "VALIDATOR_KEY_JSON_BASE64=" 
       - "BINARY_LINK=https://github.com/desmos-labs/desmos/releases/download/v5.0.1/desmos-5.0.1-linux-amd64"
       - "BINARY=desmos"
+      - "SNAPSHOT=" # Use https://app.nodejumper.io/desmos/sync
       - "RPC=https://rpc.desmos.forbole.com:443"
-      - "PEERS="
+      - "PEERS=" # Use https://app.nodejumper.io/desmos/sync
     command:
       - "bash"
       - "-c"
