@@ -22,7 +22,7 @@ services:
       - "VALIDATOR_KEY_JSON_BASE64=" 
       - "GITHUB_REPOSITORY=https://github.com/SaoNetwork/sao-consensus.git"
       - "RPC=https://rpc-t.sao.nodestake.top:443"
-      - "DENOM=unoria"
+      - "DENOM=usao"
     command:
       - "bash"
       - "-c"
