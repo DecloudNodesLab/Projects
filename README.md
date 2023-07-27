@@ -6,15 +6,14 @@ Deploying on Akash Network! [Guides](https://github.com/DecloudNodesLab/Guides).
 
 | [Akash-Network](/CosmosSDK/Mainnets/Akash-Network) | [Sentinel chain](/CosmosSDK/Mainnets/Sentinel) |[Sentinel dVPN](https://github.com/DecloudNodesLab/Sentinel_dVPN)|[Gitopia](/CosmosSDK/Mainnets/Gitopia) | [Kava](/CosmosSDK/Mainnets/Kava) | [Kyve](/CosmosSDK/Mainnets/Kyve) | [Vidulum](/CosmosSDK/Mainnets/Vidulum)| [Desmos](/CosmosSDK/Mainnets/Desmos) |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| [Realio](/CosmosSDK/Mainnets/Realio) |
+| [Realio](/CosmosSDK/Mainnets/Realio) | [Empower](/CosmosSDK/Mainnets/Empower) |
 
 
 ## Testnets
 |[Althea](/CosmosSDK/Testnets/Althea)|[Andromeda](/CosmosSDK/Testnets/Andromeda)|[Bonusblock](/CosmosSDK/Testnets/Bonusblock)|[Cascadia](/CosmosSDK/Testnets/Cascadia)|[Celestia](/CosmosSDK/Testnets/Celestia)|[Crowd_control](/CosmosSDK/Testnets/Crowd_control)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |[Deweb](/CosmosSDK/Testnets/Deweb)|[EmpowerChain](/CosmosSDK/Testnets/EmpowerChain)|[Hypersign](/CosmosSDK/Testnets/Hypersign)|[Lava](/CosmosSDK/Testnets/Lava)|[Loyal](/CosmosSDK/Testnets/Loyal)|[Nibiru](/CosmosSDK/Testnets/Nibiru)|
-|[Noria](/CosmosSDK/Testnets/Noria)|[Massa](/Massa)|[Okp4](/CosmosSDK/Testnets/Okp4)|[Timpi Chain](/CosmosSDK/Testnets/TimpiChain)|[SAO_Network](/CosmosSDK/Testnets/SAO_Network)|[SGE-Network](/CosmosSDK/Testnets/SGE-Network)|
-|[Source_Protocol](/CosmosSDK/Testnets/Source_Protocol)|
+|[Noria](/CosmosSDK/Testnets/Noria)|[Massa](/Massa)|[Okp4](/CosmosSDK/Testnets/Okp4)|[SAO_Network](/CosmosSDK/Testnets/SAO_Network)|[Source_Protocol](/CosmosSDK/Testnets/Source_Protocol)|
 
 
 ## Software
