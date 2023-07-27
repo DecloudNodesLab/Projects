@@ -19,11 +19,12 @@ services:
     env:
       - "SSH_PASS="
       - "MONIKER=Akash" 
-      - "VALIDATOR_KEY_JSON_BASE64=" 
-      - "GITHUB_REPOSITORY=https://github.com/althea-net/althea-chain"
-      - "RPC=https://althea-testnet-rpc.polkachu.com:443"
+      - "VALIDATOR_KEY_JSON_BASE64="
+      - "BINARY_LINK=https://github.com/althea-net/althea-L1/releases/download/v0.5.5/althea-linux-amd64"
+      - "BINARY=althea"
+      - "DENOM=aalthea"
       - "SNAPSHOT="
-      - "PEERS="
+      - "RPC=https://althea-testnet.nodejumper.io:443"      
     command:
       - "bash"
       - "-c"
@@ -61,4 +62,3 @@ deployment:
     akash:
       profile: app
       count: 1 
-     
