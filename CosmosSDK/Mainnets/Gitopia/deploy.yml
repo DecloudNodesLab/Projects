@@ -50,7 +50,7 @@ profiles:
     app:
       resources:
         cpu:
-          units: 4.0
+          units: 5.0
         memory:
           size: 8Gi
         storage:
