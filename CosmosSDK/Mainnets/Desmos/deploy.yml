@@ -18,13 +18,15 @@ services:
     image: ubuntu:22.04
     env:
       - "SSH_PASS=" 
-      - "MONIKER=Powered_by_Akash"
-      - "VALIDATOR_KEY_JSON_BASE64=" 
-      - "BINARY_LINK=https://github.com/desmos-labs/desmos/releases/download/v4.8.1/desmos-4.8.1-linux-amd64"
-      - "BINARY=desmos"
+      - "MONIKER=Akash" 
+      - "VALIDATOR_KEY_JSON_BASE64="
       - "SNAPSHOT="
-      - "PEERS=f090ead239426219d605b392314bdd73d16a795f@desmos.nodejumper.io:32656,862f0129322c2a0872e6440e5e896cabef0146fe@185.225.232.183:26656,23721024ea06e3610ab1f6a34b51f592cd1a3589@139.162.81.104:26656,3650e48fcec1b35e9bee070b8806d0cd7e3409f4@35.228.235.170:26656,015fc7e8ca23e4d1d003911b4fe086e345e6a014@45.9.60.250:26656,ce63f6fb85eedbe07b5950601309eada34e55071@5.34.178.17:26656,dfc0639d17b290db7339d16cca2673f7812d4e5f@65.108.4.28:26656,e25f8952bd1a664053602507aeec5536713b7d6a@51.81.155.189:10456,6dabce67a9e75edb290bda7bf80b26aa47d87192@67.211.210.50:26656,961d438daf13016d580e5809e3255c2aaae928ad@5.9.50.59:22656,8baa598e22a2c673f9a50c893b091b37bb572771@217.174.247.59:15601"
-      - "RPC=https://rpc.desmos.forbole.com:443"
+      - "RPC=https://desmos.nodejumper.io:443"
+      - "BINARY_LINK=https://github.com/desmos-labs/desmos/releases/download/v5.2.0/desmos-5.2.0-linux-amd64"
+      - "BINARY=desmos"
+      - "DENOM=udsm"
+      - "PEERS=f090ead239426219d605b392314bdd73d16a795f@desmos.nodejumper.io:32656,dfc0639d17b290db7339d16cca2673f7812d4e5f@65.108.4.28:26656,961d438daf13016d580e5809e3255c2aaae928ad@5.9.50.59:22656,b9969966a3d78e4dbc14b836bc0674d7c790df19@142.132.158.93:16256,0e77e62b5c277f85d0845d85c2ea86dd42fc30ff@23.88.74.159:56656,311cfd5691f11ec0cb0f0b8e5303016d86fb4789@148.251.19.41:26656,c0405d5eaaf811ef087d31df9d34ce2aecbe4957@135.181.31.32:26656,9ba7ce8d39b5161fcd6cf2447010bbec42d4692b@141.94.73.39:36756,a68388733297ab7412f4701ef26851b8e5b2243c@178.63.51.118:26656"
+      - "DISABLE_FASTNODE=true"
     command:
       - "bash"
       - "-c"
