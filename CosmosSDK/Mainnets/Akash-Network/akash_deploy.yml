@@ -21,7 +21,7 @@ services:
       - "MONIKER=Akash" # Node name.
       - "VALIDATOR_KEY_JSON_BASE64=" 
       - "GITHUB_REPOSITORY=https://github.com/ovrclk/akash.git"
-      - "BINARY_VERSION=v0.22.0"
+      - "BINARY_VERSION=v0.27.0"
       - "GO_VERSION=1.19.1"
       - "RPC=https://rpc-akash.ecostake.com:443"
       - "SNAPSHOT=" # use actual snapshot link https://polkachu.com/tendermint_snapshots/akash
