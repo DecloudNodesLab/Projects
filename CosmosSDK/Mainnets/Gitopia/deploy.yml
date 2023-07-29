@@ -13,7 +13,6 @@
 ##############################
 ---
 version: "2.0"
-
 services:
   app:
     image: ubuntu:22.04
@@ -41,8 +40,7 @@ services:
       - port: 26657
         as: 80
         to:
-          - global: true
-       
+          - global: true       
 profiles:
   compute:
     app:
@@ -52,9 +50,7 @@ profiles:
         memory:
           size: 8Gi
         storage:
-          size: 200Gi
-
-         
+          size: 200Gi         
   placement:
     akash: 
       pricing:
