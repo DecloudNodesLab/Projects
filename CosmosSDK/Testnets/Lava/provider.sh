@@ -12,12 +12,12 @@ chmod +x /usr/bin/lavad
 wget -O /root/.lava/config/genesis.json https://snapshots.polkachu.com/testnet-genesis/lava/genesis.json
 if [[ -n $SNAPSHOT ]]
 then
-cp /root/$FOLDER/data/priv_validator_state.json /root/$FOLDER/priv_validator_state.json.backup && $BINARY tendermint unsafe-reset-all --keep-addr-book 
+cp /root/.lava/data/priv_validator_state.json /root/.lava/priv_validator_state.json.backup && lavad tendermint unsafe-reset-all --keep-addr-book 
 SIZE=`wget --spider $SNAPSHOT 2>&1 | awk '/Length/ {print $2}'`
 echo == Download snapshot ==
-(wget -nv -O - $SNAPSHOT | pv -petrafb -s $SIZE -i 5 | lz4 -dc - | tar -xf - -C /root/$FOLDER) 2>&1 | stdbuf -o0 tr '\r' '\n'
+(wget -nv -O - $SNAPSHOT | pv -petrafb -s $SIZE -i 5 | lz4 -dc - | tar -xf - -C /root/.lava) 2>&1 | stdbuf -o0 tr '\r' '\n'
 echo == Complited ==
-mv /root/$FOLDER/priv_validator_state.json.backup /root/$FOLDER/data/priv_validator_state.json && STATE_SYNC=off
+mv /root/.lava/priv_validator_state.json.backup /root/.lava/data/priv_validator_state.json && STATE_SYNC=off
 fi
 wget -O /root/.lava/config/rpcprovider.yml $CONFIG_LINK 
 mkdir -p /root/lavad/log    
