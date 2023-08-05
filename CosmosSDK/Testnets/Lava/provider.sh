@@ -10,9 +10,15 @@ wget -O /usr/bin/lavad $BINARY_LINK
 chmod +x /usr/bin/lavad
 (echo $MNEMONIC)|lavad keys add wallet --recover --keyring-backend test
 wget -O /root/.lava/config/genesis.json https://snapshots.polkachu.com/testnet-genesis/lava/genesis.json
-SNAP_URL="http://snapshots.autostake.com/lava-testnet-1"
-SNAP_NAME=$(curl -s $SNAP_URL/ | egrep -o ">lava-testnet-1.*.tar.lz4" | tr -d ">" | tail -1)
-curl $SNAP_URL/$SNAP_NAME | lz4 -d | tar -xvf -
+if [[ -n $SNAPSHOT ]]
+then
+cp /root/$FOLDER/data/priv_validator_state.json /root/$FOLDER/priv_validator_state.json.backup && $BINARY tendermint unsafe-reset-all --keep-addr-book 
+SIZE=`wget --spider $SNAPSHOT 2>&1 | awk '/Length/ {print $2}'`
+echo == Download snapshot ==
+(wget -nv -O - $SNAPSHOT | pv -petrafb -s $SIZE -i 5 | lz4 -dc - | tar -xf - -C /root/$FOLDER) 2>&1 | stdbuf -o0 tr '\r' '\n'
+echo == Complited ==
+mv /root/$FOLDER/priv_validator_state.json.backup /root/$FOLDER/data/priv_validator_state.json && STATE_SYNC=off
+fi
 wget -O /root/.lava/config/rpcprovider.yml $CONFIG_LINK 
 mkdir -p /root/lavad/log    
 cat > /root/lavad/run <<EOF 
