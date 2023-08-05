@@ -40,7 +40,7 @@ sleep 1m
 ADDRESS=`lavad keys show wallet  -a --keyring-backend test`
 lavad tx pairing stake-provider "LAV1" \
     "50000000000ulava" \
-    "$IP:12345,tendermintrpc,2 $IP:12345,rest,2 $IP:12345,grpc,2" 2 \
+    "$IP:12345,tendermintrpc,$GEOLOCATION $IP:12345,rest,$GEOLOCATION $IP:12345,grpc,$GEOLOCATION" $GEOLOCATION \
     --chain-id lava-testnet-1 \
     --from "$ADDRESS" \
     --provider-moniker "Decloud Nodes Lab" \
