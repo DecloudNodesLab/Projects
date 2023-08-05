@@ -37,4 +37,5 @@ EOF
 chmod +x /root/lavad/log/run /root/lavad/run 
 ln -s /root/lavad /etc/service && ln -s /tmp/log/current /LOG_NODE
 sleep 2m
-lavad rpcprovider /root/.lava/config/rpcprovider.yml --geolocation $GEOLOCATION --from wallet --keyring-backend test;
+ADDRESS=`lavad keys show wallet  -a --keyring-backend test`
+lavad rpcprovider /root/.lava/config/rpcprovider.yml --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --chain-id lava-testnet-1 ;
