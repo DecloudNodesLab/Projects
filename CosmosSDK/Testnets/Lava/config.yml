@@ -3,15 +3,15 @@ endpoints:
     chain-id: LAV1
     network-address: 0.0.0.0:12345
     node-urls:
-      - url: ws://public-rpc.lavanet.xyz:443/websocket
-      - url: http://public-rpc.lavanet.xyz:443
+      - url: ws://localhost:26657/websocket
+      - url: http://localhost:26657
   - api-interface: grpc
     chain-id: LAV1
     network-address: 0.0.0.0:12345
     node-urls: 
-      - url: public-rpc.lavanet.xyz:9090
+      - url: http://localhost:9090
   - api-interface: rest
     chain-id: LAV1
     network-address: 0.0.0.0:12345
     node-urls: 
-      - url: http://public-rpc.lavanet.xyz:1317
+      - url: http://localhost:1317
