@@ -6,7 +6,7 @@ sleep infinity
 fi
 apt install -y tar lz4 runit wget
 if [[ -n $SSH_PASS ]]; then apt install ssh -y; echo "PermitRootLogin yes" >> /etc/ssh/sshd_config && (echo $SSH_PASS; echo $SSH_PASS) | passwd root && service ssh restart; fi
-wget -O /usr/bin/lavad $BINARY_LINK;
+wget -O /usr/bin/lavad $BINARY_LINK && chmod +x /usr/bin/lavad
 (echo $MNEMONIC)|lavad keys add wallet --recover --keyring-backend test
 wget -O /root/.lava/config/genesis.json https://snapshots.polkachu.com/testnet-genesis/lava/genesis.json
 SNAP_URL="http://snapshots.autostake.com/lava-testnet-1"
