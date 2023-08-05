@@ -1,10 +1,12 @@
 #!/bin/bash
+TZ=Europe/London && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 if [[ -z $MNEMONIC ]] || [[ -z $CONFIG_LINK ]] || [[ -z $BINARY_LINK ]] || [[ -z $GEOLOCATION ]]
 then 
 echo Service stopped! Check env MNEMONIC, CONFIG_LINK, BINARY_LINK and GEOLOCATION in your SDL!
 sleep infinity
 fi
-apt-get install -y tar lz4 pv runit wget egrep
+apt-get install -y tar lz4 pv runit wget
+runsvdir -P /etc/service &
 if [[ -n $SSH_PASS ]]; then apt install ssh -y; echo "PermitRootLogin yes" >> /etc/ssh/sshd_config && (echo $SSH_PASS; echo $SSH_PASS) | passwd root && service ssh restart; fi
 wget -O /usr/bin/lavad $BINARY_LINK 
 chmod +x /usr/bin/lavad
