@@ -36,6 +36,18 @@ exec svlogd -tt /tmp/log/
 EOF
 chmod +x /root/lavad/log/run /root/lavad/run 
 ln -s /root/lavad /etc/service && ln -s /tmp/log/current /LOG_NODE
-sleep 2m
+sleep 1m
 ADDRESS=`lavad keys show wallet  -a --keyring-backend test`
+lavad tx pairing stake-provider "LAV1" \
+    "50000000000ulava" \
+    "$IP:12345,tendermintrpc,2 $IP:12345,rest,2 $IP:12345,grpc,2" 2 \
+    --chain-id lava-testnet-1 \
+    --from "$ADDRESS" \
+    --provider-moniker "Decloud Nodes Lab" \
+    --keyring-backend "test" \
+    --gas="auto" \
+    --gas-adjustment "1.5" \
+    --fees 5000ulava \
+    -y
+sleep 1m
 lavad rpcprovider /root/.lava/config/rpcprovider.yml --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --chain-id lava-testnet-1 ;
