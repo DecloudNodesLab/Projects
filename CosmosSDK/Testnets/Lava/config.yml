@@ -12,6 +12,6 @@ endpoints:
       - url: 127.0.0.1:9090
   - api-interface: rest
     chain-id: LAV1
-    network-address: 0.0.0.0:12345
+    network-address: 127.0.0.1:12345
     node-urls: 
       - url: http://127.0.0.1:1317
