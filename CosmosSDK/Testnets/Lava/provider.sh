@@ -22,7 +22,7 @@ echo == Complited ==
 mv /root/.lava/priv_validator_state.json.backup /root/.lava/data/priv_validator_state.json && STATE_SYNC=off
 fi
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" /root/.lava/config/config.toml
-sed -i.bak -e "s/^enable = false/enable = true/;" /root/.lava/config/config.toml
+sed -i.bak -e "s/^enable = false/enable = true/;" /root/.lava/config/app.toml
 wget -O /root/.lava/config/rpcprovider.yml $CONFIG_LINK 
 mkdir -p /root/lavad/log    
 cat > /root/lavad/run <<EOF 
