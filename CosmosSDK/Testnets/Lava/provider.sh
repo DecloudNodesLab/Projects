@@ -50,4 +50,4 @@ lavad tx pairing stake-provider "LAV1" \
     --fees 5000ulava \
     -y
 sleep 1m
-lavad rpcprovider /root/.lava/config/rpcprovider.yml --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --chain-id lava-testnet-1 ;
+lavad rpcprovider /root/.lava/config/rpcprovider.yml --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --chain-id lava-testnet-1
