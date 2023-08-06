@@ -22,7 +22,7 @@ echo == Complited ==
 fi
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" /root/.lava/config/config.toml
 sed -i.bak -e "s/^enable = false/enable = true/;" /root/.lava/config/app.toml
-wget -O /root/.lava/config/rpcprovider.yml $CONFIG_LINK 
+wget -O /root/rpcprovider.yml $CONFIG_LINK 
 mkdir -p /root/lavad/log    
 cat > /root/lavad/run <<EOF 
 #!/bin/bash
@@ -43,7 +43,7 @@ mkdir -p /root/lavap/log
 cat > /root/lavap/run <<EOF 
 #!/bin/bash
 exec 2>&1
-exec lavad rpcprovider /root/.lava/config/rpcprovider.yml --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --chain-id lava-testnet-1
+exec lavad rpcprovider --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --chain-id lava-testnet-1
 EOF
 mkdir -p /tmp/lavap/log/
 cat > /root/lavap/log/run <<EOF 
