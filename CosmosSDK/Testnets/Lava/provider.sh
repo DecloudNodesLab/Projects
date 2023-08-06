@@ -2,7 +2,7 @@
 TZ=Europe/London && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 if [[ -z $MNEMONIC ]] || [[ -z $CONFIG_LINK ]] || [[ -z $BINARY_LINK ]] || [[ -z $GEOLOCATION ]] || [[ -z $IP ]]
 then 
-echo Service stopped! Check env MNEMONIC, CONFIG_LINK, BINARY_LINK and GEOLOCATION in your SDL!
+echo Service stopped! Check env MNEMONIC, CONFIG_LINK, BINARY_LINK, GEOLOCATION and IP in your SDL!
 sleep infinity
 fi
 apt-get install -y tar lz4 pv runit wget
