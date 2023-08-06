@@ -38,7 +38,7 @@ chmod +x /root/lavad/log/run /root/lavad/run
 ln -s /root/lavad /etc/service && ln -s /tmp/log/current /LOG_NODE
 sleep 1m
 ADDRESS=`lavad keys show wallet  -a --keyring-backend test`
-sleep 1m
+sleep 5
 mkdir -p /root/lavap/log    
 cat > /root/lavap/run <<EOF 
 #!/bin/bash
