@@ -22,6 +22,7 @@ echo == Complited ==
 fi
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" /root/.lava/config/config.toml
 sed -i.bak -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0ulava\"/;" /root/.lava/config/app.toml
+sed -i.bak -e "s/chain-id = ""/chain-id = "lava-testnet-1"/;" /root/.lava/config/client.toml
 sed -i.bak -e "s/^enable = false/enable = true/;" /root/.lava/config/app.toml
 wget -O /root/rpcprovider.yml $CONFIG_LINK 
 mkdir -p /root/lavad/log    
