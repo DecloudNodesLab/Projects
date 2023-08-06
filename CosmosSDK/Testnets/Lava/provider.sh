@@ -45,7 +45,7 @@ mkdir -p /root/lavap/log
 cat > /root/lavap/run <<EOF 
 #!/bin/bash
 exec 2>&1
-exec lavad rpcprovider --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --chain-id lava-testnet-1
+exec lavad rpcprovider --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test
 EOF
 mkdir -p /tmp/lavap/log/
 cat > /root/lavap/log/run <<EOF 
