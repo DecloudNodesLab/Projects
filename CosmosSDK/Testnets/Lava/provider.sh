@@ -51,4 +51,18 @@ lavad tx pairing stake-provider "LAV1" \
     --fees 5000ulava \
     -y
 sleep 1m
-lavad rpcprovider /root/.lava/config/rpcprovider.yml --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --chain-id lava-testnet-1
+mkdir -p /root/lavap/log    
+cat > /root/lavap/run <<EOF 
+#!/bin/bash
+exec 2>&1
+exec lavad rpcprovider /root/.lava/config/rpcprovider.yml --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --chain-id lava-testnet-1
+EOF
+mkdir -p /tmp/lavap/log/
+cat > /root/lavap/log/run <<EOF 
+#!/bin/bash
+exec svlogd -tt /tmp/lavap/log/
+EOF
+chmod +x /root/lavap/log/run /root/lavap/run 
+ln -s /root/lavap /etc/service && ln -s /tmp/lavap/log/current /LOG_PROV
+sleep 20
+while true ; do tail -f /LOG_PROV ; done
