@@ -14,12 +14,11 @@ chmod +x /usr/bin/lavad
 wget -O /root/.lava/config/genesis.json https://snapshots.polkachu.com/testnet-genesis/lava/genesis.json
 if [[ -n $SNAPSHOT ]]
 then
-cp /root/.lava/data/priv_validator_state.json /root/.lava/priv_validator_state.json.backup && lavad tendermint unsafe-reset-all --keep-addr-book 
+lavad tendermint unsafe-reset-all --keep-addr-book 
 SIZE=`wget --spider $SNAPSHOT 2>&1 | awk '/Length/ {print $2}'`
 echo == Download snapshot ==
 (wget -nv -O - $SNAPSHOT | pv -petrafb -s $SIZE -i 5 | lz4 -dc - | tar -xf - -C /root/.lava) 2>&1 | stdbuf -o0 tr '\r' '\n'
 echo == Complited ==
-mv /root/.lava/priv_validator_state.json.backup /root/.lava/data/priv_validator_state.json && STATE_SYNC=off
 fi
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" /root/.lava/config/config.toml
 sed -i.bak -e "s/^enable = false/enable = true/;" /root/.lava/config/app.toml
