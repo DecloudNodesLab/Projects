@@ -38,17 +38,6 @@ chmod +x /root/lavad/log/run /root/lavad/run
 ln -s /root/lavad /etc/service && ln -s /tmp/log/current /LOG_NODE
 sleep 1m
 ADDRESS=`lavad keys show wallet  -a --keyring-backend test`
-lavad tx pairing stake-provider "LAV1" \
-    "50000000000ulava" \
-    "$IP:12345,tendermintrpc,$GEOLOCATION $IP:12345,rest,$GEOLOCATION $IP:12345,grpc,$GEOLOCATION" $GEOLOCATION \
-    --chain-id lava-testnet-1 \
-    --from "$ADDRESS" \
-    --provider-moniker "Decloud Nodes Lab" \
-    --keyring-backend "test" \
-    --gas="auto" \
-    --gas-adjustment "1.5" \
-    --fees 5000ulava \
-    -y
 sleep 1m
 mkdir -p /root/lavap/log    
 cat > /root/lavap/run <<EOF 
