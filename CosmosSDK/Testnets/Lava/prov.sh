@@ -11,6 +11,7 @@ if [[ -n $SSH_PASS ]]; then apt install ssh -y; echo "PermitRootLogin yes" >> /e
 wget -O /usr/bin/lavad $BINARY_LINK 
 chmod +x /usr/bin/lavad
 (echo $MNEMONIC)|lavad keys add wallet --recover --keyring-backend test
+wget -O /root/rpcprovider.yml $CONFIG_LINK 
 ADDRESS=`lavad keys show wallet  -a --keyring-backend test`
 sleep 5
 mkdir -p /root/lavap/log    
