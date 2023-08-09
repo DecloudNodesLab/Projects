@@ -1,0 +1,33 @@
+endpoints:
+  - api-interface: tendermintrpc
+    chain-id: LAV1
+    network-address: 0.0.0.0:12345
+    node-urls:
+      - url: ws://provider.europlots.com:32130/websocket
+      - url: http://provider.europlots.com:32130
+  - api-interface: grpc
+    chain-id: LAV1
+    network-address: 0.0.0.0:12345
+    node-urls: 
+      - url: provider.europlots.com:31901
+  - api-interface: rest
+    chain-id: LAV1
+    network-address: 0.0.0.0:12345
+    node-urls: 
+      - url: http://provider.europlots.com:31042
+  - api-interface: tendermintrpc
+    chain-id: COS5
+    network-address: 0.0.0.0:12345
+    node-urls:
+      - url: ws://provider.europlots.com:31731/websocket
+      - url: http://provider.europlots.com:31731
+  - api-interface: grpc
+    chain-id: COS5
+    network-address: 0.0.0.0:12345
+    node-urls: 
+      - url: provider.europlots.com:30181
+  - api-interface: rest
+    chain-id: COS5
+    network-address: 0.0.0.0:12345
+    node-urls: 
+      - url: http://provider.europlots.com:31520
