@@ -20,7 +20,7 @@ services:
       - "SSH_PASS=" #Root password far a ssh connection.
       - "MONIKER=Akash" # Node name. 
       - "VALIDATOR_KEY_JSON_BASE64=" # Paste your base64 encoded priv_validator_key.json
-      - "BINARY_LINK=https://github.com/lavanet/lava/releases/download/v0.12.1-hf/lavad-v0.12.1-hf-linux-amd64"
+      - "BINARY_LINK=https://github.com/lavanet/lava/releases/download/v0.16.0/lavad-v0.16.0-linux-amd64"
       - "BINARY=lavad"
       - "RPC=https://lava-testnet-rpc.polkachu.com:443"
       - "SNAPSHOT="
