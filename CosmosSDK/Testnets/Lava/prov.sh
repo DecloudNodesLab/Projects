@@ -1,6 +1,6 @@
 #!/bin/bash
 TZ=Europe/London && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-if [[ -z $MNEMONIC ]] || [[ -z $CONFIG_LINK ]] || [[ -z $BINARY_LINK ]] || [[ -z $GEOLOCATION ]] || [[ -z $IP ]] || [[ -z $RPC ]]
+if [[ -z $MNEMONIC ]] || [[ -z $CONFIG_LINK ]] || [[ -z $BINARY_LINK ]] || [[ -z $GEOLOCATION ]] || [[ -z $IP ]]
 then 
 echo Service stopped! Check env MNEMONIC, CONFIG_LINK, BINARY_LINK, GEOLOCATION and IP in your SDL!
 sleep infinity
@@ -18,7 +18,7 @@ mkdir -p /root/lavap/log
 cat > /root/lavap/run <<EOF 
 #!/bin/bash
 exec 2>&1
-exec lavad rpcprovider --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --node $RPC
+exec lavad rpcprovider --geolocation $GEOLOCATION --from $ADDRESS --keyring-backend test --chain-id lava-testnet-1
 EOF
 mkdir -p /tmp/lavap/log/
 cat > /root/lavap/log/run <<EOF 
