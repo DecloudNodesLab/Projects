@@ -27,5 +27,5 @@ exec svlogd -tt /tmp/lavap/log/
 EOF
 chmod +x /root/lavap/log/run /root/lavap/run 
 ln -s /root/lavap /etc/service && ln -s /tmp/lavap/log/current /LOG_PROV
-sleep 20
+sleep 3
 while true ; do tail -f /LOG_PROV ; done
