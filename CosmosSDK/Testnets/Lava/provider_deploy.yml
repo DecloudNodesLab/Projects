@@ -9,7 +9,7 @@ services:
       - "SSH_PASS=YOUR_SSH_PASSWORD" # Password for a connection via ssh.
       - "CHAIN_ID=lava-testnet-1"
       - "BINARY_LINK=https://github.com/lavanet/lava/releases/download/v0.16.0/lavad-v0.16.0-linux-amd64" # Download link to actual binary file.
-      - "MNEMONIC_BASE64=" Mnemonic phrase encoded base64 with padding.
+      - "MNEMONIC_BASE64=" # Mnemonic phrase encoded base64 with padding.
       - "CONFIG_LINK=" # Link to you RAW (or direct download) rpcprovider.yml file.
       - "LAVAD_NODE=" # RPC node Lava network.
       - "IP=" # Public IP provider
