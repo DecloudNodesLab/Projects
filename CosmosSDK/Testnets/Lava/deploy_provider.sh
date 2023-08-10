@@ -1,45 +1,45 @@
 version: '2.0'
 endpoints:
- YOUR_ENDPOINT_NAME:
+ lava:
    kind: ip
 services:
-  basic-ubuntu:
-    image: ubuntu:22.04
+  provider:
+    image: dimokus88/lavaprovider:0.2
     env:
-      - "MNEMONIC="
+      - "SSH_PASS=YOUR_SSH_PASSWORD"
+      - "MNEMONIC_BASE64="
       - "CONFIG_LINK="
-    command:
-      - "bash"
-      - '-c'
-    args:
-      - 'apt update && apt upgrade -y; apt install -y curl; curl -s https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/CosmosSDK/Testnets/Lava/provider.sh | bash; sleep infinity'
+      - "LAVAD_NODE="
+      - "CHAIN_ID=lava-testnet-1"
+      - "BINARY_LINK=https://github.com/lavanet/lava/releases/download/v0.16.0/lavad-v0.16.0-linux-amd64"
+      - "IP="
+      - "LAVAD_GEOLOCATION="
     expose:
       - port: 22
         to:
           - global: true
       - port: 12345
-        as: 12345
         to:
           - global: true
-            ip: YOUR_ENDPOINT_NAME
+            ip: lava  
 profiles:
   compute:
-    basic-ubuntu:
+    provider:
       resources:
         cpu:
-          units: 2
+          units: 1
         memory:
-          size: 4Gi
+          size: 2Gi
         storage:
-          size: 20Gi
+          size: 10Gi
   placement:
     akash:
       pricing:
-        basic-ubuntu:
+        provider:
           denom: uakt
           amount: 10000
 deployment:
-  basic-ubuntu:
+  provider:
     akash:
-      profile: basic-ubuntu
+      profile: provider
       count: 1
