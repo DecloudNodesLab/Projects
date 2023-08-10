@@ -19,15 +19,15 @@ endpoints:
     chain-id: COS5
     network-address: 0.0.0.0:12345
     node-urls:
-      - url: ws://provider.europlots.com:31731/websocket
-      - url: http://provider.europlots.com:31731
+      - url: ws://provider.europlots.com:32301/websocket
+      - url: http://provider.europlots.com:32301
   - api-interface: grpc
     chain-id: COS5
     network-address: 0.0.0.0:12345
     node-urls: 
-      - url: provider.europlots.com:30181
+      - url: provider.europlots.com:32116
   - api-interface: rest
     chain-id: COS5
     network-address: 0.0.0.0:12345
     node-urls: 
-      - url: http://provider.europlots.com:31520
+      - url: http://provider.europlots.com:30954
