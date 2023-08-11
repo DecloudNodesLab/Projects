@@ -4,7 +4,7 @@ endpoints:
    kind: ip
 services:
   lava-provider:
-    image: dimokus88/lavaprovider:0.2
+    image: dimokus88/lavaprovider:0.4
     env:
       - "SSH_PASS=YOUR_SSH_PASSWORD" # Password for a connection via ssh.
       - "CHAIN_ID=lava-testnet-1"
