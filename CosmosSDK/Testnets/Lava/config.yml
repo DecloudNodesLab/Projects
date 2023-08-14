@@ -36,5 +36,5 @@ endpoints:
     chain-id: ETH1
     network-address: 127.0.0.1:12345
     node-urls:
-      - url: wss://mainnet.infura.io/ws/v3/944c5f677e68491594a89a039787b64f/ws
+      - url: wss://mainnet.infura.io/ws/v3/944c5f677e68491594a89a039787b64f
       
