@@ -3,18 +3,18 @@ endpoints:
     chain-id: LAV1
     network-address: 0.0.0.0:12345
     node-urls:
-      - url: ws://provider.europlots.com:32130/websocket
-      - url: http://provider.europlots.com:32130
+      - url: ws://provider.palmito.duckdns.org:32282/websocket
+      - url: http://provider.palmito.duckdns.org:32282
   - api-interface: grpc
     chain-id: LAV1
     network-address: 0.0.0.0:12345
     node-urls: 
-      - url: provider.europlots.com:31901
+      - url: provider.palmito.duckdns.org:31699
   - api-interface: rest
     chain-id: LAV1
     network-address: 0.0.0.0:12345
     node-urls: 
-      - url: http://provider.europlots.com:31042
+      - url: http://provider.palmito.duckdns.org:30326
   - api-interface: tendermintrpc
     chain-id: COS5
     network-address: 0.0.0.0:12345
