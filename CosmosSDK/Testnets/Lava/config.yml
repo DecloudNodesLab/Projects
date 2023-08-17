@@ -1,17 +1,17 @@
 endpoints:
   - api-interface: tendermintrpc
     chain-id: LAV1
-    network-address: 0.0.0.0:12345
+    network-address: 0.0.0.0:80
     node-urls:
       - url: ws://provider.palmito.duckdns.org:32282/websocket
       - url: http://provider.palmito.duckdns.org:32282
   - api-interface: grpc
     chain-id: LAV1
-    network-address: 0.0.0.0:12345
+    network-address: 0.0.0.0:80
     node-urls: 
       - url: provider.palmito.duckdns.org:31699
   - api-interface: rest
     chain-id: LAV1
-    network-address: 0.0.0.0:12345
+    network-address: 0.0.0.0:80
     node-urls: 
       - url: http://provider.palmito.duckdns.org:30326 
