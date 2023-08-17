@@ -1,40 +1,17 @@
 endpoints:
   - api-interface: tendermintrpc
     chain-id: LAV1
-    network-address: 0.0.0.0:12345
+    network-address: 0.0.0.0:80
     node-urls:
       - url: ws://provider.palmito.duckdns.org:32282/websocket
       - url: http://provider.palmito.duckdns.org:32282
   - api-interface: grpc
     chain-id: LAV1
-    network-address: 0.0.0.0:12345
+    network-address: 0.0.0.0:80
     node-urls: 
       - url: provider.palmito.duckdns.org:31699
   - api-interface: rest
     chain-id: LAV1
-    network-address: 0.0.0.0:12345
+    network-address: 0.0.0.0:80
     node-urls: 
-      - url: http://provider.palmito.duckdns.org:30326
-  - api-interface: tendermintrpc
-    chain-id: COS5
-    network-address: 0.0.0.0:12345
-    node-urls:
-      - url: ws://provider.europlots.com:32301/websocket
-      - url: http://provider.europlots.com:32301
-  - api-interface: grpc
-    chain-id: COS5
-    network-address: 0.0.0.0:12345
-    node-urls: 
-      - url: provider.europlots.com:32116
-  - api-interface: rest
-    chain-id: COS5
-    network-address: 0.0.0.0:12345
-    node-urls: 
-      - url: http://provider.europlots.com:30954
-
-  - api-interface: jsonrpc
-    chain-id: ETH1
-    network-address: 127.0.0.1:12345
-    node-urls:
-      - url: wss://mainnet.infura.io/ws/v3/a62c1ee205af49a5b651c7cbc472525d
-      
+      - url: http://provider.palmito.duckdns.org:30326 
