@@ -2,7 +2,7 @@ endpoints:
   - api-interface: tendermintrpc
     chain-id: LAV1
     network-address: 
-        address: "127.0.0.1:2001"
+        address: "0.0.0.0:2001"
         disable-tls: true
     node-urls:
       - url: ws://provider.palmito.duckdns.org:32282/websocket
@@ -10,14 +10,14 @@ endpoints:
   - api-interface: grpc
     chain-id: LAV1
     network-address: 
-        address: "127.0.0.1:2001"
+        address: "0.0.0.0:2001"
         disable-tls: true
     node-urls: 
       - url: provider.palmito.duckdns.org:31699
   - api-interface: rest
     chain-id: LAV1
     network-address: 
-        address: "127.0.0.1:2001"
+        address: "0.0.0.0:2001"
         disable-tls: true
     node-urls: 
       - url: http://provider.palmito.duckdns.org:30326 
