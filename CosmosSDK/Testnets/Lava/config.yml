@@ -3,18 +3,25 @@ endpoints:
     chain-id: LAV1
     network-address: 
         address: "0.0.0.0:2001"
+        disable-tls: true
     node-urls:
-      - url: http://provider.hurricane.akash.pub:31117
-      - url: ws://provider.hurricane.akash.pub:31117/websocket
+      - url: http://provider.pcgameservers.com:32610
+      - url: ws://provider.pcgameservers.com:32610/websocket
+      #- url: http://provider.hurricane.akash.pub:<26657>
+      #- url: ws://provider.hurricane.akash.pub:<26657>/websocket
   - api-interface: grpc
     chain-id: LAV1
     network-address: 
         address: "0.0.0.0:2001"
+        disable-tls: true
     node-urls: 
-      - url: provider.hurricane.akash.pub:32131
+      - url: provider.pcgameservers.com:30720
+      #- url: provider.hurricane.akash.pub:<9090>
   - api-interface: rest
     chain-id: LAV1
     network-address: 
         address: "0.0.0.0:2001"
+        disable-tls: true
     node-urls: 
-      - url: http://provider.hurricane.akash.pub:30072
+      - url: provider.pcgameservers.com:31511
+      #- url: http://provider.hurricane.akash.pub:<1317>
