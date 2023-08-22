@@ -23,5 +23,5 @@ endpoints:
         address: "0.0.0.0:2001"
         disable-tls: true
     node-urls: 
-      - url: provider.pcgameservers.com:31511
+      - url: http://provider.pcgameservers.com:31511
       #- url: http://provider.hurricane.akash.pub:<1317>
