@@ -3,7 +3,9 @@
 The launch is described using CloudFlare!
 
 ### Step 1
-Deploy https://gitopia.com/DecloudNodesLab/cosmos-universe/tree/master/projects/Lava/lava_provider_deploy.yml , set  variables `SSH_PASS`, `MNEMONIC_BASE64`, `CONFIG_LINK`, `LAVAD_NODE` and `LAVAD_GEOLOCATION`.
+Deploy https://gitopia.com/DecloudNodesLab/cosmos-universe/tree/master/projects/Lava/lava_provider_deploy.yml .
+
+Set  variables `SSH_PASS`, `MNEMONIC_BASE64`, `CONFIG_LINK`, `LAVAD_NODE` and `LAVAD_GEOLOCATION`.
 
 ![image](https://github.com/DecloudNodesLab/Projects/assets/23629420/2c56f21b-7ef3-41aa-a665-2460ca261865)
 
@@ -18,12 +20,15 @@ Go to https://dash.cloudflare.com/ , select your domain name.
 In left menu:
 
 - Add "DNS" records TYPE-A, NAME-<subomain>, CONTENT-<YOUR_LEASE_IP_FROM_DEPLOY>
+
 ![image](https://github.com/DecloudNodesLab/Projects/assets/23629420/774d791c-afdf-4724-973f-0c16504154cf)
 
 - Check "SSL/TLS-Overwiew", need select Full mode (not Full(strict)).
+- 
 ![image](https://github.com/DecloudNodesLab/Projects/assets/23629420/0f57098f-bc61-4093-8cd5-3136d072e073)
 
 - In "Network" enable "gRPS" connection.
+- 
 ![image](https://github.com/DecloudNodesLab/Projects/assets/23629420/b9fc19e0-0015-4484-838d-e764672e6c95)
 
 ### Step 3 (run rpcprovider)
@@ -35,6 +40,7 @@ Run test command:
 `lavad test rpcprovider --from $ADDRESS --keyring-backend test --node $LAVAD_NODE --endpoints "<YOUR_SUBDOMAIN.DOMAIN>:443,<CHAIN>"`
 
 Example correct result:
+
 ![image](https://github.com/DecloudNodesLab/Projects/assets/23629420/c67de1a0-0099-4a07-9db2-6446290302d0)
 
 Run stake command:
