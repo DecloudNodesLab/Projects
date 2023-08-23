@@ -2,7 +2,6 @@
 
 The launch is described using CloudFlare!
 
-Short guide:
 ### Step 1
 Deploy https://gitopia.com/DecloudNodesLab/cosmos-universe/tree/master/projects/Lava/lava_provider_deploy.yml , set  variables `SSH_PASS`, `MNEMONIC_BASE64`, `CONFIG_LINK`, `LAVAD_NODE` and `LAVAD_GEOLOCATION`.
 
