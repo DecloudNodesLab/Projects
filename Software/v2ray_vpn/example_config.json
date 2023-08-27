@@ -1,0 +1,9 @@
+{
+"inbounds": 
+[
+{"port": 1010,"protocol": "vmess","settings": {"clients": [{"id": "7142a3f6-5788-4c91-839a-25b06fe58f4b","security": "auto","alterId": 0}]}},
+{"port": 1080,"protocol": "socks","settings": {"auth": "noauth", "userLevel": 0}}
+],
+"outbounds": [{"protocol": "freedom","settings": {}}
+]
+}
