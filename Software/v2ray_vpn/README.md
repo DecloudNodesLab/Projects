@@ -85,4 +85,4 @@ More client's application in [v2ray github](https://github.com/v2fly/v2ray-core/
 
 Больше клиентских приложений можно найти в [v2ray github](https://github.com/v2fly/v2ray-core/releases) и использовать [v2ray docs](https://www.v2fly.org/en_US/guide/start.html#client) .
 
-[В начало](https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/README.md#deploy-v2ray-vpn-server-on-akash-network)https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/README.md#deploy-v2ray-vpn-server-on-akash-network
+[В начало](https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/README.md#deploy-v2ray-vpn-server-on-akash-network)
