@@ -1,8 +1,7 @@
-
-![image](https://user-images.githubusercontent.com/23629420/219872517-2adc32b1-5f64-4d48-9a81-1e2ef6b01a53.png)
-
 # Deploy V2RAY vpn server on Akash Network
 # Развертка сервера V2RAY в Akash Network
+
+![image](https://user-images.githubusercontent.com/23629420/219872517-2adc32b1-5f64-4d48-9a81-1e2ef6b01a53.png)
 
 | [Akash Network](https://akash.network/) | [Decloud Nodes Lab](https://declab.pro/) | 
 ___
