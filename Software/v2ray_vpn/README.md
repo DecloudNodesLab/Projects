@@ -24,7 +24,7 @@ Product documentation. | Документация по продукту.
 
 ## Step 1 (Create and share your config.json)
 
-You can use example [config.json](https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/example_config.json), replacing the `UUID` ([generator UUID](https://www.uuidgenerator.net/))in the file to have your id.
+You can use example [config.json](https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/example_config.json), replacing the `ID` ([generator UUID](https://www.uuidgenerator.net/))in the file to have your id.
 Or create your own `config.json` by going to the[ documentation](https://www.v2fly.org/en_US/guide/start.html).
 Place your `config.json` file on any platform where direct download will be available (github, google drive, etc.).
 
@@ -59,7 +59,7 @@ More client's application in [v2ray github](https://github.com/v2fly/v2ray-core/
 
 ## Шаг 1 (Создайте и разместите свой config.json)
 
-Вы можете использовать пример [config.json](https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/example_config.json), заменив `UUID` ( [generator UUID](https://www.uuidgenerator.net/) ) в файле, где будет указан ваш идентификатор.
+Вы можете использовать пример [config.json](https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/example_config.json), заменив `ID` ( [generator UUID](https://www.uuidgenerator.net/) ) в файле, где будет указан ваш идентификатор.
 Или создайте свой собственный `config.json`, перейдя в [документацию](https://www.v2fly.org/en_US/guide/start.html).
 Разместите файл `config.json` на любой платформе, где будет доступна прямая загрузка (github, Google Drive и т.д.).
 
