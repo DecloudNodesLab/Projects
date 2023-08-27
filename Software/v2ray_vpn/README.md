@@ -21,6 +21,8 @@ Product documentation. | Документация по продукту.
 
 | [Site V2RAY](https://www.v2fly.org/en_US) | [GitHub V2RAY](https://github.com/v2fly) | 
 
+> [Инструкция на русском](https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/README.md#%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5)
+
 ## Step 1 (Create and share your config.json)
 
 You can use example [config.json](https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/example_config.json), replacing the `UUID` ([generator UUID](https://www.uuidgenerator.net/))in the file to have your id.
