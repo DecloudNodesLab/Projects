@@ -4,8 +4,8 @@ endpoints:
     network-address: 
         address: "0.0.0.0:2001"
     node-urls:
-      - url: http://provider.pcgameservers.com:32610
-      - url: ws://provider.pcgameservers.com:32610/websocket
+      - url: http://provider.palmito.duckdns.org:330615
+      - url: ws://provider.palmito.duckdns.org:330615/websocket
       #- url: http://provider.hurricane.akash.pub:<26657>
       #- url: ws://provider.hurricane.akash.pub:<26657>/websocket
   - api-interface: grpc
@@ -13,12 +13,12 @@ endpoints:
     network-address: 
         address: "0.0.0.0:2001"
     node-urls: 
-      - url: provider.pcgameservers.com:30720
+      - url: provider.palmito.duckdns.org:32340
       #- url: provider.hurricane.akash.pub:<9090>
   - api-interface: rest
     chain-id: LAV1
     network-address: 
         address: "0.0.0.0:2001"
     node-urls: 
-      - url: http://provider.pcgameservers.com:31511
+      - url: http://provider.palmito.duckdns.org:31235
       #- url: http://provider.hurricane.akash.pub:<1317>
