@@ -5,11 +5,12 @@ services:
     image: declab/v2ray:0.1
     env:
       - "CONFIG_LINK=https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/Software/3proxy/config.json"
+                                      # ^^ Link to your config.json file ^^ 
     expose:
-      - port: 1010
+      - port: 1010    # select ports, which use in your config.json
         to:
          - global: true 
-      - port: 1080
+      - port: 1080   # select ports, which use in your config.json
         to:
          - global: true 
 profiles:
@@ -21,8 +22,7 @@ profiles:
         memory:
           size: 256Mi
         storage:
-          size: 256Mi
-         
+          size: 256Mi         
   placement:
     akash: 
       pricing:
