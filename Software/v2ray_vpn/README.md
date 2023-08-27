@@ -13,6 +13,8 @@ Before you start - subscribe to our news channels:
 | [Discord Akash Network](https://discord.gg/WR56y8Wt) | [Telegram Akash Network](https://t.me/AkashNW) | [Telegram Akash Network RU](https://t.me/akash_ru) | [Twitter Akash Network](https://twitter.com/akashnet_) | 
 
 | [Discord Decloud Nodes Lab](https://discord.gg/rPENzerwZ8) | [Twitter Decloud Nodes Lab](https://twitter.com/NodesLab) | [Telegram channel Decloud Nodes Lab](https://t.me/NodesLab) |
+
+| [How to deploy in CloudMos?](https://github.com/DecloudNodesLab/Guides/blob/main/English/Cloudmos.md) | [Как развернуть в CloudMos?](https://github.com/DecloudNodesLab/Guides/blob/main/Russian/Cloudmos.md) |
 ___
 
 Product documentation. | Документация по продукту. 
@@ -34,12 +36,14 @@ Deploy `deploy.yml` file on Akash Network. If need, replace with your own link, 
 
 ## Step 3 (Usage)
 
-You can use the server as a `socks` proxy for your browser or application. And in the role of a VPN connection. For example, for Android, there is an [application](https://play.google.com/store/apps/details?id=com.v2ray.ang) .
-For the browser - set the settings - socks, your provider's address and forwarded port from the LEASES UI CloudMos tab.
+You can use the server as a `socks` proxy for your browser or application. And in the role of a VPN connection. 
+
+For the browser - set the settings - `socks`, your provider's address and forwarded port from the **LEASES UI CloudMos** tab.
 
 <img src=https://github.com/DecloudNodesLab/Projects/assets/23629420/862dca25-b57c-424f-8a3a-b394aabc558e width=50%>
 
-For an Android application - create a new profile, where specify the provider's address, the vmess forwarded port and the UUID specified in config.toml.
+For example, for Android, there is an [application](https://play.google.com/store/apps/details?id=com.v2ray.ang) **v2ray NG** .
+In **v2ray NG** - create a new profile, where specify the provider's address, the `vmess` forwarded port and the `UUID` specified in `config.toml`.
 Profile setup example:
 
 <img src=https://github.com/DecloudNodesLab/Projects/assets/23629420/047ef1a7-f219-4b97-9315-b68d9f79e867 width=20%>
@@ -63,14 +67,15 @@ More client's application in [v2ray github](https://github.com/v2fly/v2ray-core/
 
 ## Шаг 3 (Использование)
 
-Вы можете использовать сервер в качестве прокси-сервера типа`socks` для вашего браузера или приложения. Так и в роли VPN-соединения. Например, для Android, выступает [приложение](https://play.google.com/store/apps/details?id=com.v2ray.ang).
-Для браузера - установите настройки - socks, адрес вашего провайдера и переадресованный порт из вкладки LEASES UI CloudMos.
+Вы можете использовать сервер в качестве прокси-сервера типа`socks` для вашего браузера или приложения. Так и в роли VPN-соединения.
+Для браузера - установите настройки - `socks`, адрес вашего провайдера и переадресованный порт из вкладки **LEASES UI CloudMos**.
 
 <img src=https://github.com/DecloudNodesLab/Projects/assets/23629420/862dca25-b57c-424f-8a3a-b394aabc558e width=50%>
 
 ![image](https://github.com/DecloudNodesLab/Projects/assets/23629420/26dba7bd-b87c-487c-86d8-072ec1ec72c7)
 
-Для приложения Android - создайте новый профиль, где укажите адрес провайдера, переадресованный порт vmess и UUID указанный в config.toml.
+В Android, выступает [приложение](https://play.google.com/store/apps/details?id=com.v2ray.ang) **v2ray NG**.
+Для приложения **v2ray NG** - создайте новый профиль, где укажите адрес провайдера, переадресованный порт `vmess` и `UUID` указанный в `config.toml`.
 Пример настройки профиля:
 
 <img src=https://github.com/DecloudNodesLab/Projects/assets/23629420/047ef1a7-f219-4b97-9315-b68d9f79e867 width=20%>
