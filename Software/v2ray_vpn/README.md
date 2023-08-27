@@ -50,7 +50,7 @@ Profile setup example:
 <img src=https://github.com/DecloudNodesLab/Projects/assets/23629420/047ef1a7-f219-4b97-9315-b68d9f79e867 width=20%>
 
 More client's application in [v2ray github](https://github.com/v2fly/v2ray-core/releases) and use [v2ray docs](https://www.v2fly.org/en_US/guide/start.html#client) .
-
+[UP](https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/README.md#deploy-v2ray-vpn-server-on-akash-network)
 #### Инструкция на русском языке.
 
 ## Шаг 1 (Создайте и разместите свой config.json)
@@ -82,3 +82,5 @@ More client's application in [v2ray github](https://github.com/v2fly/v2ray-core/
 <img src=https://github.com/DecloudNodesLab/Projects/assets/23629420/047ef1a7-f219-4b97-9315-b68d9f79e867 width=20%>
 
 Больше клиентских приложений можно найти в [v2ray github](https://github.com/v2fly/v2ray-core/releases) и использовать [v2ray docs](https://www.v2fly.org/en_US/guide/start.html#client) .
+
+[В начало](https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/README.md#deploy-v2ray-vpn-server-on-akash-network)https://github.com/DecloudNodesLab/Projects/blob/main/Software/v2ray_vpn/README.md#deploy-v2ray-vpn-server-on-akash-network
