@@ -37,7 +37,7 @@ Deploy `deploy.yml` file on Akash Network. If need, replace with your own link, 
 
 ## Step 3 (Usage)
 
-You can use the server as a `socks` proxy for your browser or application. And in the role of a VPN connection. 
+You can use the **v2ray** as a `socks` proxy for your browser or application. And in the role of a VPN connection. 
 
 For the browser - set the settings - `socks`, your provider's address and forwarded port from the **LEASES UI CloudMos** tab.
 
@@ -72,7 +72,7 @@ More client's application in [v2ray github](https://github.com/v2fly/v2ray-core/
 
 ## Шаг 3 (Использование)
 
-Вы можете использовать сервер в качестве прокси-сервера типа`socks` для вашего браузера или приложения. Так и в роли VPN-соединения.
+Вы можете использовать **v2ray** в качестве прокси-сервера типа`socks` для вашего браузера или приложения. Так и в роли VPN-соединения.
 Для браузера - установите настройки - `socks`, адрес вашего провайдера и переадресованный порт из вкладки **LEASES UI CloudMos**.
 
 <img src=https://github.com/DecloudNodesLab/Projects/assets/23629420/862dca25-b57c-424f-8a3a-b394aabc558e width=50%>
