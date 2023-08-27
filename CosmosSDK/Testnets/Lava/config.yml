@@ -4,8 +4,8 @@ endpoints:
     network-address: 
         address: "0.0.0.0:2001"
     node-urls:
-      - url: http://provider.palmito.duckdns.org:330615
-      - url: ws://provider.palmito.duckdns.org:330615/websocket
+      - url: http://provider.palmito.duckdns.org:30615
+      - url: ws://provider.palmito.duckdns.org:30615/websocket
       #- url: http://provider.hurricane.akash.pub:<26657>
       #- url: ws://provider.hurricane.akash.pub:<26657>/websocket
   - api-interface: grpc
