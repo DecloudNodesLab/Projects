@@ -1,0 +1,36 @@
+---
+version: "2.0"
+services:
+  app:
+    image: declab/v2ray:0.1
+    env:
+      - "CONFIG_LINK=https://raw.githubusercontent.com/DecloudNodesLab/Projects/main/Software/3proxy/config.json"
+    expose:
+      - port: 1010
+        to:
+         - global: true 
+      - port: 1080
+        to:
+         - global: true 
+profiles:
+  compute:
+    app:
+      resources:
+        cpu:
+          units: 0.5
+        memory:
+          size: 256Mi
+        storage:
+          size: 256Mi
+         
+  placement:
+    akash: 
+      pricing:
+        app:
+          denom: uakt
+          amount: 10000
+deployment:
+  app:
+    akash:
+      profile: app
+      count: 1 
