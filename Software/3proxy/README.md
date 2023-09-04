@@ -43,8 +43,6 @@ ___
 
 Deploy [deploy.yml](https://github.com/Dimokus88/3proxy/blob/main/deploy.yml) **3proxy** with **Cloudmos (Akashlytics)** ([use instructions here]( https://github.com/Dimokus88/guides/blob/main/Akashlytics/EN-guide.md)).
 
-[Video tutorial](https://www.youtube.com/watch?v=_7VG2RkzEhE).
-
 In this case, a simple proxy server **without authorization** will be deployed, listening on port `8088`. The server configuration is in the executable **shell** [script](https://github.com/Dimokus88/3proxy/blob/main/start.sh#L8-L12). Based on this [script](https://github.com/Dimokus88/3proxy/blob/main/start.sh) you can create your own `proxy` with authentication, proxy server type, logging and more.
 
 Details on the configuration on the developer's [website](https://3proxy.ru/download/devel/?l=EN).
@@ -65,8 +63,6 @@ ___
 
 Разверните [deploy.yml](https://github.com/Dimokus88/3proxy/blob/main/deploy.yml) **3proxy** с помощью **Cloudmos (Akashlytics)**  ([инструкция по использованию здесь](https://github.com/Dimokus88/guides/blob/main/Akashlytics/RU-guide.md)).
  
- [Видео инструкция](https://www.youtube.com/watch?v=_7VG2RkzEhE).
-
 В днном случае, будет развернут простой proxy сервер **без авторизации**, порт для прослушивания `8088`. Кофигурация сервера находится в исполняемом **shell** [скрипте](https://github.com/Dimokus88/3proxy/blob/main/start.sh#L8-L12). Вы можете на основе этого [скрипта](https://github.com/Dimokus88/3proxy/blob/main/start.sh) создать свой `proxy` с аутентификацией, типом прокси сервера, логированием и многим другим. 
 
 Подробности по конфигурации на сайте разработчика  https://3proxy.ru/. 
