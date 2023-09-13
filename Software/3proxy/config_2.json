@@ -3,7 +3,7 @@
 [
 "8.8.8.8",
 "8.8.4.4"
-]
+],
 "inbounds": 
 [
 {"port": 1010,"protocol": "vmess","settings": {"clients": [{"id": "68004cd6-e49f-4dfa-836c-13733b56ff85","security": "auto","alterId": 0}]}},
