@@ -1,8 +1,8 @@
 {
 "inbounds": 
 [
-{"port": 1080,"protocol": "vmess","settings": {"clients": [{"id": "68004cd6-e49f-4dfa-836c-13733b56ff85","security": "auto","alterId": 0}]}},
-{"port": 443,"protocol": "socks","settings": {"auth": "noauth", "userLevel": 0}}
+{"port": 1010,"protocol": "vmess","settings": {"clients": [{"id": "68004cd6-e49f-4dfa-836c-13733b56ff85","security": "auto","alterId": 0}]}},
+{"port": 1080,"protocol": "socks","settings": {"auth": "noauth", "userLevel": 0}}
 ],
 "outbounds": [{"protocol": "freedom","settings": {}}
 ]
