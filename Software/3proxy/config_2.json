@@ -1,7 +1,7 @@
 {
 "inbounds": 
 [
-{"port": 1080,"protocol": "socks","settings": {"auth": "noauth", "userLevel": 0}}
+{"port": 80,"protocol": "socks","settings": {"auth": "noauth", "userLevel": 0}}
 ],
 "outbounds": [{"protocol": "freedom","settings": {}}
 ]
