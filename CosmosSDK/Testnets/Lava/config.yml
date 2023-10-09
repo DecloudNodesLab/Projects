@@ -5,7 +5,7 @@ endpoints:
         address: "0.0.0.0:2001"
     node-urls:
       - url: https://lava.declab.pro/rpc
-      - url: ws://lava.declab.pro/rpc/websocket
+      - url: ws://provider.dcnorse.ddns.net:31051/websocket
       #- url: http://provider.hurricane.akash.pub:<26657>
       #- url: ws://provider.hurricane.akash.pub:<26657>/websocket
   - api-interface: grpc
