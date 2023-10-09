@@ -4,7 +4,7 @@ endpoints:
     network-address: 
         address: "0.0.0.0:2001"
     node-urls:
-      - url: https://lava.declab.pro/rpc
+      - url: http://provider.dcnorse.ddns.net:31051
       - url: ws://provider.dcnorse.ddns.net:31051/websocket
       #- url: http://provider.hurricane.akash.pub:<26657>
       #- url: ws://provider.hurricane.akash.pub:<26657>/websocket
@@ -20,5 +20,5 @@ endpoints:
     network-address: 
         address: "0.0.0.0:2001"
     node-urls: 
-      - url: https://lava.declab.pro
+      - url: http://provider.dcnorse.ddns.net:31352
       #- url: http://provider.hurricane.akash.pub:<1317>
