@@ -4,8 +4,8 @@ endpoints:
     network-address: 
         address: "0.0.0.0:2001"
     node-urls:
-      - url: http://provider.palmito.duckdns.org:30615
-      - url: ws://provider.palmito.duckdns.org:30615/websocket
+      - url: https://lava.declab.pro/rpc
+      - url: ws://lava.declab.pro/rpc/websocket
       #- url: http://provider.hurricane.akash.pub:<26657>
       #- url: ws://provider.hurricane.akash.pub:<26657>/websocket
   - api-interface: grpc
@@ -13,12 +13,12 @@ endpoints:
     network-address: 
         address: "0.0.0.0:2001"
     node-urls: 
-      - url: provider.palmito.duckdns.org:32340
+      - url: provider.dcnorse.ddns.net:32041
       #- url: provider.hurricane.akash.pub:<9090>
   - api-interface: rest
     chain-id: LAV1
     network-address: 
         address: "0.0.0.0:2001"
     node-urls: 
-      - url: http://provider.palmito.duckdns.org:31235
+      - url: https://lava.declab.pro
       #- url: http://provider.hurricane.akash.pub:<1317>
