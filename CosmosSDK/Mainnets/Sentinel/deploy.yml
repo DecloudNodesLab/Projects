@@ -1,35 +1,28 @@
 ##############################
 # Validator node on Akash Network
 #
-# Guide for deploy node https://github.com/DecloudNodesLab/Guides/blob/main/README.md
+# Guide for deploy node https://docs.declab.pro/guides/cloudmos
 # Site project: https://sentinel.co/
 # Discord or Telegram project: https://discord.com/invite/mmAA8qF
 # Twitter: https://twitter.com/Sentinel_co
 # Explorer: https://www.mintscan.io/sentinel
 ##############################
-# Akash Discord: https://discord.gg/ybKMsYYZkx
-# Akash Telegram EN: https://t.me/AkashNW
-# Akash Telegram RU: https://t.me/akash_ru
-##############################
+
 ---
 version: "2.0"
 services:
   app:
-    image: ubuntu:22.04
+    image: declab/universe:0.1.7
     env:
-      - "SSH_PASS=" #Root password far a ssh connection. Пароль root для подключения по ssh.
-      - "MONIKER=Akash" # Node name.Имя ноды.
-      - "GITHUB_REPOSITORY=https://github.com/sentinel-official/hub.git"
-      - "BINARY_VERSION=v0.10.1"
+      - "SSH_KEY="
+      - "MONIKER=Akash"
+      - "BINARY_LINK=https://github.com/sentinel-official/hub/releases/download/v0.11.3/sentinelhub"
       - "BINARY=sentinelhub"
-      - "SNAPSHOT="
+      - "FOLDER=.sentinelhub"
+      - "STATE_SYNC=enable"
       - "DENOM=udvpn"
+      - "PEERS=26422b225939a310fe1022730b38149a69d7d97e@38.242.200.201:26656,11dd817e50479f928a52cf16e07dfb0e207a4772@45.77.62.130:26656,66d0d22dc5e1e542c200da1fc097dae5ea1f3b4e@195.201.175.156:17256,01df51c57897e04ebd6492ff8b5944619857f57f@216.128.136.66:26656,ebc272824924ea1a27ea3183dd0b9ba713494f83@195.3.223.168:26706"
       - "RPC=https://rpc.sentinel.co:443"
-    command:
-      - "bash"
-      - "-c"
-    args:
-      - 'apt update;apt upgrade -y ; apt install -y curl; curl -s  https://raw.githubusercontent.com/DecloudNodesLab/CodeBase/main/deploy/main_cosmossdk.sh | bash '
     expose:
       - port: 22
         to:
@@ -50,7 +43,7 @@ profiles:
         memory:
           size: 6Gi
         storage:
-          size: 80Gi
+          size: 100Gi
   placement:
     akash:       
       pricing:
