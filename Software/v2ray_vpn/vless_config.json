@@ -9,7 +9,7 @@
       "settings": {
         "clients": [
           {
-            "id": "c7aa69d3-3a09-4915-b2ee-a6355fe55c05",  // Замените на ваш UUID
+            "id": "c7aa69d3-3a09-4915-b2ee-a6355fe55c05",
             "flow": "xtls-rprx-direct"
           }
         ],
@@ -29,7 +29,7 @@
           "serverNames": [
             "www.bing.com"
           ],
-          "privateKey": "WKnwYuiqzSXvBAsKGLoN5wrYevzCpxyFnlamhKqNnWw=", // Замените на ваш приватный ключ
+          "privateKey": "WKnwYuiqzSXvBAsKGLoN5wrYevzCpxyFnlamhKqNnWw=",
           "shortIds": [
             ""
           ]
