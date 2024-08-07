@@ -13,12 +13,7 @@
             "flow": "xtls-rprx-direct"
           }
         ],
-        "decryption": "none",
-        "fallbacks": [
-          {
-            "dest": 80
-          }
-        ]
+        "decryption": "none"
       },
       "streamSettings": {
         "network": "tcp",
