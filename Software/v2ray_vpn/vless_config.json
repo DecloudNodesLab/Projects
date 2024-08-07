@@ -1,0 +1,41 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 1010,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "c7aa69d3-3a09-4915-b2ee-a6355fe55c05",
+            "flow": "xtls-rprx-vision"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "show": true,
+          "dest": "www.bing.com:443",
+          "serverNames": [
+            "www.bing.com"
+          ],
+          "privateKey": "",  // Здесь оставить пустым
+          "shortIds": [
+            ""
+          ]
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
