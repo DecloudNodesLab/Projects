@@ -10,7 +10,7 @@
         "clients": [
           {
             "id": "c7aa69d3-3a09-4915-b2ee-a6355fe55c05",
-            "flow": "xtls-rprx-direct"
+            "flow": "xtls-rprx-vision"
           }
         ],
         "decryption": "none"
