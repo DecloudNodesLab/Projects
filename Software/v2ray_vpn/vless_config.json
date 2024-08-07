@@ -9,22 +9,27 @@
       "settings": {
         "clients": [
           {
-            "id": "c7aa69d3-3a09-4915-b2ee-a6355fe55c05",
-            "flow": "xtls-rprx-vision"
+            "id": "c7aa69d3-3a09-4915-b2ee-a6355fe55c05",  // Замените на ваш UUID
+            "flow": "xtls-rprx-direct"
           }
         ],
-        "decryption": "none"
+        "decryption": "none",
+        "fallbacks": [
+          {
+            "dest": 80
+          }
+        ]
       },
       "streamSettings": {
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "show": true,
+          "show": false,
           "dest": "www.bing.com:443",
           "serverNames": [
             "www.bing.com"
           ],
-          "privateKey": "",  // Здесь оставить пустым
+          "privateKey": "WKnwYuiqzSXvBAsKGLoN5wrYevzCpxyFnlamhKqNnWw=", // Замените на ваш приватный ключ
           "shortIds": [
             ""
           ]
@@ -34,8 +39,7 @@
   ],
   "outbounds": [
     {
-      "protocol": "freedom",
-      "settings": {}
+      "protocol": "freedom"
     }
   ]
 }
