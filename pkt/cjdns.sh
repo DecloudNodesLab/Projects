@@ -293,13 +293,6 @@ main() {
     else
         libc="STATIC"
     fi
-    if [ -d /run/systemd/system ] ; then
-        true
-    elif command -v rc-service >/dev/null 2>/dev/null ; then
-        true
-    else
-        die "Only supported on systems with openrc or systemd"
-    fi
     if [ -z "$CJDNS_IPV4" ]
     then
         die "Public IP is empty! Set CJDNS_IPV4 in SDL and update deployment!"
