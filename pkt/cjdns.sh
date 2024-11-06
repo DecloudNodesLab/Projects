@@ -1,11 +1,5 @@
 #!/bin/sh
 # modified initial scrypt https://pkt.cash/special/cjdns/cjdns.sh 
-
-if [ -z "$CJDNS_IPV4" ]
-then
-die "Public IP is empty! Set CJDNS_IPV4 in SDL and update deployment!"
-fi
-
 if [ -e /etc/cjdns.sh.env ] ; then
     . "/etc/cjdns.sh.env"
 fi
@@ -306,7 +300,10 @@ main() {
     else
         die "Only supported on systems with openrc or systemd"
     fi
-
+    if [ -z "$CJDNS_IPV4" ]
+    then
+        die "Public IP is empty! Set CJDNS_IPV4 in SDL and update deployment!"
+    fi
     update "$libc"
     mk_conf
     update_conf
