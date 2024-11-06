@@ -1,5 +1,5 @@
 #!/bin/sh
-# modified initial scrypt https://pkt.cash/special/cjdns/cjdns.sh 
+# modified initial scrypt https://pkt.cash/special/cjdns/cjdns.sh!
 if [ -e /etc/cjdns.sh.env ] ; then
     . "/etc/cjdns.sh.env"
 fi
