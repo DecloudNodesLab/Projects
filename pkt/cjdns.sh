@@ -1,5 +1,10 @@
 #!/bin/sh
 # modified initial scrypt https://pkt.cash/special/cjdns/cjdns.sh!
+if [ -z "$CJDNS_IPV4" ]
+then
+echo "Public IP is empty! Set CJDNS_IPV4 in SDL and update deployment!"
+sleep infinity
+fi
 if [ -e /etc/cjdns.sh.env ] ; then
     . "/etc/cjdns.sh.env"
 fi
@@ -308,9 +313,4 @@ main() {
     # We check and install the launcher only if we're not being launched from it
     install_launcher
 }
-if [ -z "$CJDNS_IPV4" ]
-then
-echo "Public IP is empty! Set CJDNS_IPV4 in SDL and update deployment!"
-sleep infinity
-fi
 main "$@"
