@@ -293,10 +293,7 @@ main() {
     else
         libc="STATIC"
     fi
-    if [ -z "$CJDNS_IPV4" ]
-    then
-        die "Public IP is empty! Set CJDNS_IPV4 in SDL and update deployment!"
-    fi
+
     update "$libc"
     mk_conf
     update_conf
@@ -311,4 +308,9 @@ main() {
     # We check and install the launcher only if we're not being launched from it
     install_launcher
 }
+if [ -z "$CJDNS_IPV4" ]
+then
+echo "Public IP is empty! Set CJDNS_IPV4 in SDL and update deployment!"
+sleep infinity
+fi
 main "$@"
